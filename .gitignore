@@ -23,3 +23,6 @@ profiles/*/cordis.yml
 .DS_Store
 .idea/
 .vscode/
+
+# dsh-open file
+dsh-open.yml
