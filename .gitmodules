@@ -1,0 +1,15 @@
+[submodule "skills/typst-skill"]
+	path = skills/typst-skill
+	url = https://github.com/akilrammohan/typst-skill
+[submodule "skills/geng-academic-fraud-detector"]
+	path = skills/geng-academic-fraud-detector
+	url = https://github.com/wooly99/geng-academic-fraud-detector
+[submodule "skills/maintain-ex2200"]
+	path = skills/maintain-ex2200
+	url = https://github.com/wold9168/ex2200.skill
+[submodule "skills/agent-skills-nix"]
+	path = skills/agent-skills-nix
+	url = https://github.com/Kyure-A/agent-skills-nix
+[submodule "skills/just.skill"]
+	path = skills/just.skill
+	url = https://github.com/wold9168/just.skill
