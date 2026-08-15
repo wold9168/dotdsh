@@ -1,15 +1,18 @@
-[submodule "skills/typst-skill"]
-	path = skills/typst-skill
+[submodule "skillrepo/typst-skill"]
+	path = skillrepo/typst-skill
 	url = https://github.com/akilrammohan/typst-skill
-[submodule "skills/geng-academic-fraud-detector"]
-	path = skills/geng-academic-fraud-detector
+[submodule "skillrepo/geng-academic-fraud-detector"]
+	path = skillrepo/geng-academic-fraud-detector
 	url = https://github.com/wooly99/geng-academic-fraud-detector
-[submodule "skills/maintain-ex2200"]
-	path = skills/maintain-ex2200
+[submodule "skillrepo/maintain-ex2200"]
+	path = skillrepo/maintain-ex2200
 	url = https://github.com/wold9168/ex2200.skill
-[submodule "skills/agent-skills-nix"]
-	path = skills/agent-skills-nix
+[submodule "skillrepo/agent-skills-nix"]
+	path = skillrepo/agent-skills-nix
 	url = https://github.com/Kyure-A/agent-skills-nix
-[submodule "skills/just.skill"]
-	path = skills/just.skill
+[submodule "skillrepo/just.skill"]
+	path = skillrepo/just.skill
 	url = https://github.com/wold9168/just.skill
+[submodule "skillrepo/diagram-design"]
+	path = skillrepo/diagram-design
+	url = https://github.com/cathrynlavery/diagram-design.git
