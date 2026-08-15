@@ -1,0 +1,41 @@
+ui-onboarding:
+  welcomeNoticeVersion: 2026-08-13.1
+locale:
+  preference: zh
+agent-default-model:
+  provider: deepseek-official
+  model: deepseek-v4-flash
+  reasoningEffort: high
+llm-pi-ai:
+  providers:
+    opencode:
+      apiKeyEnv: OPENCODE_API_KEY
+      models:
+        - id: big-pickle
+          name: Big Pickle
+          contextWindow: 200000
+          maxTokens: 32000
+        - id: deepseek-v4-flash-free
+          name: DeepSeek V4 Flash Free
+          contextWindow: 200000
+          maxTokens: 128000
+        - id: laguna-s-2.1-free
+          name: Laguna S 2.1 Free
+          contextWindow: 256000
+          maxTokens: 32000
+        - id: ling-3.0-flash-free
+          name: Ling-3.0-flash Free
+          contextWindow: 262144
+          maxTokens: 32768
+        - id: mimo-v2.5-free
+          name: MiMo V2.5 Free
+          contextWindow: 200000
+          maxTokens: 32000
+        - id: nemotron-3-ultra-free
+          name: Nemotron 3 Ultra Free
+          contextWindow: 1000000
+          maxTokens: 128000
+        - id: north-mini-code-free
+          name: North Mini Code Free
+          contextWindow: 256000
+          maxTokens: 64000

@@ -1,0 +1,25 @@
+# Secrets and identity — never commit
+.credentials.yaml
+.env
+.env.*
+.anonymous-user-id
+
+# Runtime data — not configuration
+sessions/
+storages/
+.cache/
+.tmp/
+*.lock
+*.tmp
+
+# Profile dependency installs
+profiles/node_modules/
+**/node_modules/
+
+# Generated profile root config (rewritten by dsh on every boot; edit cordis.patch.yml instead)
+profiles/*/cordis.yml
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
