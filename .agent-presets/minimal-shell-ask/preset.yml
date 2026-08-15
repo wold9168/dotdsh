@@ -1,0 +1,2 @@
+name: 带Shell鉴权的极简模式
+description: 基于极简模式。所有 Shell 指令均以 ask 形式执行：每条 bash 命令在运行前都会请求用户确认。
