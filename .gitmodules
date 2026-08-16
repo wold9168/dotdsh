@@ -16,3 +16,6 @@
 [submodule "skillrepo/diagram-design"]
 	path = skillrepo/diagram-design
 	url = https://github.com/cathrynlavery/diagram-design.git
+[submodule "skillrepo/J-Space-Cognition-Suite-V3.6"]
+	path = skillrepo/J-Space-Cognition-Suite-V3.6
+	url = https://github.com/Tiger3807861189/J-Space-Cognition-Suite-V3.6
