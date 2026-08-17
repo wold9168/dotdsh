@@ -26,6 +26,14 @@ llm-pi-ai:
       apiKeyEnv: SCNET_API_KEY
       api: openai-completions
       baseURL: https://api.scnet.cn/api/llm/v1
+      retryPolicy:
+        mode: normal
+        maxRetries: 100
+        retryableCodes: [ RATE_LIMIT ]
+        backoff:
+          initialDelayMs: 500
+          maxDelayMs: 5000
+          jitterRatio: 0.1
       models:
         - id: GLM-5.2-Base
         - id: MiniMax-M2.5
@@ -65,3 +73,11 @@ llm-pi-ai:
         - id: DeepSeek-V4-Flash
     nvidia:
       apiKeyEnv: NVIDIA_API_KEY
+      retryPolicy:
+        mode: normal
+        maxRetries: 100
+        retryableCodes: [ RATE_LIMIT ]
+        backoff:
+          initialDelayMs: 500
+          maxDelayMs: 5000
+          jitterRatio: 0.1
