@@ -75,3 +75,62 @@ llm-pi-ai:
           initialDelayMs: 500
           maxDelayMs: 5000
           jitterRatio: 0.1
+    openrouter:
+      apiKeyEnv: OPENROUTER_API_KEY
+      models:
+        - id: cohere/north-mini-code:free
+          name: "Cohere: North Mini Code (free)"
+          contextWindow: 256000
+          maxTokens: 64000
+        - id: google/gemma-4-26b-a4b-it:free
+          name: "Google: Gemma 4 26B A4B  (free)"
+          contextWindow: 131072
+          maxTokens: 32768
+        - id: google/gemma-4-31b-it:free
+          name: "Google: Gemma 4 31B (free)"
+          contextWindow: 262144
+          maxTokens: 32768
+        - id: inclusionai/ling-3.0-flash:free
+          name: Ling-3.0-flash (free)
+          contextWindow: 262144
+          maxTokens: 32768
+        - id: nvidia/nemotron-3-nano-30b-a3b:free
+          name: "NVIDIA: Nemotron 3 Nano 30B A3B (free)"
+          contextWindow: 256000
+          maxTokens: 4096
+        - id: nvidia/nemotron-3-super-120b-a12b:free
+          name: "NVIDIA: Nemotron 3 Super (free)"
+          contextWindow: 262144
+          maxTokens: 262144
+        - id: nvidia/nemotron-3-ultra-550b-a55b:free
+          name: "NVIDIA: Nemotron 3 Ultra (free)"
+          contextWindow: 1000000
+          maxTokens: 65536
+        - id: nvidia/nemotron-nano-12b-v2-vl:free
+          name: "NVIDIA: Nemotron Nano 12B 2 VL (free)"
+          contextWindow: 128000
+          maxTokens: 128000
+        - id: nvidia/nemotron-nano-9b-v2:free
+          name: "NVIDIA: Nemotron Nano 9B V2 (free)"
+          contextWindow: 128000
+          maxTokens: 4096
+        - id: openai/gpt-oss-20b:free
+          name: "OpenAI: gpt-oss-20b (free)"
+          contextWindow: 131072
+          maxTokens: 32768
+        - id: openrouter/free
+          name: Free Models Router
+          contextWindow: 200000
+          maxTokens: 4096
+        - id: poolside/laguna-m.1:free
+          name: "Poolside: Laguna M.1 (free)"
+          contextWindow: 262144
+          maxTokens: 32768
+        - id: poolside/laguna-s-2.1:free
+          name: "Poolside: Laguna S 2.1 (free)"
+          contextWindow: 262144
+          maxTokens: 32768
+        - id: poolside/laguna-xs-2.1:free
+          name: "Poolside: Laguna XS 2.1 (free)"
+          contextWindow: 262144
+          maxTokens: 32768
