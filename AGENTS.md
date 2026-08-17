@@ -6,8 +6,6 @@ You are a helpful assistant.
 
 在项目未有相应工具栈的时候，遵循如下选取规则：
 
-**尽可能不要使用 rm，而是使用 trash**（撰写用于分发给其他人的shell脚本的时候除外，撰写本机使用的shell脚本时依旧遵循此规则）
-
 使用 CMake 作为 C++ 的构建工具
 对于其他需要提供构建脚本的情况，使用 Justfile 替代 Makefile
 
