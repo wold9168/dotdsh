@@ -4,7 +4,7 @@ locale:
   preference: zh
 agent-default-model:
   provider: scnet
-  model: DeepSeek-V4-Flash-0731
+  model: DeepSeek-V4-Flash
 llm-pi-ai:
   providers:
     opencode:
@@ -35,42 +35,20 @@ llm-pi-ai:
           maxDelayMs: 5000
           jitterRatio: 0.1
       models:
-        - id: GLM-5.2-Base
-        - id: MiniMax-M2.5
-        - id: Qwen3.5-122B-A10B
-        - id: Qwen3.8-Max
-        - id: Qwen3-30B-A3B-Instruct-2507
-        - id: DeepSeek-V4-Flash-0731
-        - id: Qwen3-235B-A22B
-        - id: Kimi-K2.6
-        - id: MiniMax-M3
-        - id: DeepSeek-R1-Distill-Qwen-7B
-        - id: DeepSeek-R1-Distill-Qwen-32B
-        - id: DeepSeek-R1-Distill-Llama-70B
-        - id: DeepSeek-V4-Pro
-        - id: Kimi-K2.7-Base
-        - id: SCNet-Max
-        - id: Qwen3.6-Max
-        - id: Kimi-K2.5
-        - id: Qwen3.7-Plus
-        - id: Kimi-K3
-        - id: GLM-5.2
-        - id: Kimi-K2.7-Code
-        - id: GLM-5
-        - id: Qwen3-30B-A3B
-        - id: QwQ-32B
-        - id: Qwen3-235B-A22B-Thinking-2507
-        - id: MiMo-V2.5-Pro
-        - id: MiniMax-M2.7
-        - id: GLM-5.1
-        - id: Qwen3.6-Flash
-        - id: GLM-5-Base
-        - id: Qwen3.6-27B
-        - id: Qwen3-Embedding-8B
-        - id: Qwen3.6-Plus
-        - id: Qwen3.7-Max
-        - id: GLM-5.1-Base
         - id: DeepSeek-V4-Flash
+        - id: DeepSeek-V4-Flash-0731
+        - id: DeepSeek-V4-Pro
+        - id: GLM-5
+        - id: GLM-5.1
+        - id: GLM-5.2
+        - id: Kimi-K2.5
+        - id: Kimi-K2.6
+        - id: Kimi-K2.7-Code
+        - id: Kimi-K3
+        - id: MiniMax-M2.5
+        - id: MiniMax-M2.7
+        - id: MiniMax-M3
+        - id: Qwen3.8-Max
     nvidia:
       apiKeyEnv: NVIDIA_API_KEY
       retryPolicy:
