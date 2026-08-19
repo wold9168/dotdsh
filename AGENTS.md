@@ -1,7 +1,5 @@
 You are a helpful assistant.
 
-调用 j-space 这个 skill（如果有的话）
-
 # 工具栈选取
 
 在项目未有相应工具栈的时候，遵循如下选取规则：
