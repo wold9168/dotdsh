@@ -112,7 +112,7 @@ llm-pi-ai:
           maxTokens: 64000
         - id: google/gemma-4-26b-a4b-it:free
           name: "Google: Gemma 4 26B A4B  (free)"
-          contextWindow: 131072
+          contextWindow: 262144
           maxTokens: 32768
         - id: google/gemma-4-31b-it:free
           name: "Google: Gemma 4 31B (free)"
@@ -125,7 +125,7 @@ llm-pi-ai:
         - id: nvidia/nemotron-3-nano-30b-a3b:free
           name: "NVIDIA: Nemotron 3 Nano 30B A3B (free)"
           contextWindow: 256000
-          maxTokens: 4096
+          maxTokens: 256000
         - id: nvidia/nemotron-3-super-120b-a12b:free
           name: "NVIDIA: Nemotron 3 Super (free)"
           contextWindow: 262144
@@ -141,7 +141,7 @@ llm-pi-ai:
         - id: nvidia/nemotron-nano-9b-v2:free
           name: "NVIDIA: Nemotron Nano 9B V2 (free)"
           contextWindow: 128000
-          maxTokens: 4096
+          maxTokens: 128000
         - id: openai/gpt-oss-20b:free
           name: "OpenAI: gpt-oss-20b (free)"
           contextWindow: 131072
@@ -149,7 +149,7 @@ llm-pi-ai:
         - id: openrouter/free
           name: Free Models Router
           contextWindow: 200000
-          maxTokens: 4096
+          maxTokens: 8000
         - id: poolside/laguna-m.1:free
           name: "Poolside: Laguna M.1 (free)"
           contextWindow: 262144
@@ -227,12 +227,12 @@ llm-pi-ai:
           maxTokens: 64000
         - id: openrouter/free:free
           contextWindow: 200000
-          maxTokens: 4096
+          maxTokens: 8000
         - id: gpt-5.6-luna
           contextWindow: 1050000
           maxTokens: 128000
         - id: gemma-4-26b-a4b-it:free
-          contextWindow: 131072
+          contextWindow: 262144
           maxTokens: 32768
         - id: gemini-3.5-flash:free
           contextWindow: 1048576
