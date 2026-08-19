@@ -3,29 +3,17 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: ops-newapi
-  model: glm-5.2:free
+  provider: nvidia
+  model: nvidia/nemotron-3-ultra-550b-a55b
 llm-pi-ai:
   providers:
     opencode:
       apiKeyEnv: OPENCODE_API_KEY
       models:
-        - id: big-pickle
-          name: Big Pickle
-          contextWindow: 200000
-          maxTokens: 32000
         - id: deepseek-v4-flash-free
           name: DeepSeek V4 Flash Free
           contextWindow: 200000
           maxTokens: 128000
-        - id: laguna-s-2.1-free
-          name: Laguna S 2.1 Free
-          contextWindow: 256000
-          maxTokens: 32000
-        - id: ling-3.0-flash-free
-          name: Ling-3.0-flash Free
-          contextWindow: 262144
-          maxTokens: 32768
         - id: mimo-v2.5-free
           name: MiMo V2.5 Free
           contextWindow: 200000
@@ -34,10 +22,6 @@ llm-pi-ai:
           name: Nemotron 3 Ultra Free
           contextWindow: 1000000
           maxTokens: 128000
-        - id: north-mini-code-free
-          name: North Mini Code Free
-          contextWindow: 256000
-          maxTokens: 64000
     scnet:
       apiKeyEnv: SCNET_API_KEY
       api: openai-completions
@@ -106,10 +90,6 @@ llm-pi-ai:
     openrouter:
       apiKeyEnv: OPENROUTER_API_KEY
       models:
-        - id: cohere/north-mini-code:free
-          name: "Cohere: North Mini Code (free)"
-          contextWindow: 256000
-          maxTokens: 64000
         - id: google/gemma-4-26b-a4b-it:free
           name: "Google: Gemma 4 26B A4B  (free)"
           contextWindow: 262144
@@ -118,50 +98,14 @@ llm-pi-ai:
           name: "Google: Gemma 4 31B (free)"
           contextWindow: 262144
           maxTokens: 32768
-        - id: inclusionai/ling-3.0-flash:free
-          name: Ling-3.0-flash (free)
-          contextWindow: 262144
-          maxTokens: 32768
-        - id: nvidia/nemotron-3-nano-30b-a3b:free
-          name: "NVIDIA: Nemotron 3 Nano 30B A3B (free)"
-          contextWindow: 256000
-          maxTokens: 256000
-        - id: nvidia/nemotron-3-super-120b-a12b:free
-          name: "NVIDIA: Nemotron 3 Super (free)"
-          contextWindow: 262144
-          maxTokens: 262144
         - id: nvidia/nemotron-3-ultra-550b-a55b:free
           name: "NVIDIA: Nemotron 3 Ultra (free)"
           contextWindow: 1000000
           maxTokens: 65536
-        - id: nvidia/nemotron-nano-12b-v2-vl:free
-          name: "NVIDIA: Nemotron Nano 12B 2 VL (free)"
-          contextWindow: 128000
-          maxTokens: 128000
-        - id: nvidia/nemotron-nano-9b-v2:free
-          name: "NVIDIA: Nemotron Nano 9B V2 (free)"
-          contextWindow: 128000
-          maxTokens: 128000
-        - id: openai/gpt-oss-20b:free
-          name: "OpenAI: gpt-oss-20b (free)"
-          contextWindow: 131072
-          maxTokens: 32768
-        - id: openrouter/free
-          name: Free Models Router
-          contextWindow: 200000
-          maxTokens: 8000
-        - id: poolside/laguna-m.1:free
-          name: "Poolside: Laguna M.1 (free)"
-          contextWindow: 262144
-          maxTokens: 32768
-        - id: poolside/laguna-s-2.1:free
-          name: "Poolside: Laguna S 2.1 (free)"
-          contextWindow: 262144
-          maxTokens: 32768
-        - id: poolside/laguna-xs-2.1:free
-          name: "Poolside: Laguna XS 2.1 (free)"
-          contextWindow: 262144
-          maxTokens: 32768
+        - id: z-ai/glm-5.2:free
+          name: "GLM 5.2 (free)"
+          contextWindow: 256000
+          maxTokens: 256000
     ops-newapi:
       displayName: 一通的newapi(free)
       apiKeyEnv: OPS_NEWAPI_API_KEY
