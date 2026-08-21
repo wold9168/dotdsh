@@ -39,6 +39,12 @@ You are a helpful assistant.
 若由你来直接通过 shell 工具进行 commit，则请使用 Assisted-by: AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2] 的形式标注 Commit 信息
 例如： Assisted-by: Claude:claude-3-opus coccinelle sparse
 
+## 沙盒限制
+
+沙盒限制了你读写工作区外的文件，这同样限制了你执行一些依赖安装、项目构建类型的指令。
+
+你应该将所有相关的指令交由用户审计并由用户执行。
+
 ## miscs
 
 如果你需要验证一个脚本，使用 cd $(mktemp -d) 去到 /tmp 目录下。
