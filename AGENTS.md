@@ -9,10 +9,9 @@ You are a helpful assistant.
 
 使用 goenv 来指定 go 项目的版本，尽量使用go doc工具来获取远端包的文档
 使用 jenv 来指定 java 项目的版本
-使用 pnpm 来安装作为工具的 js 包
 
 使用 uv 进行 Python 项目管理，尽量使用 .venv 环境
-使用 bun 进行 JavaScript 项目管理，使用 pnpm 管理跨项目使用的 JS 包
+使用 pnpm 管理跨项目使用的或者是作为工具的 JavaScript/TypeScript 包，进行 JavaScript/TypeScript 项目管理。避免直接执行 `node`、`npm`、`npx`指令。
 使用 Maven 进行 Java 项目管理
 使用 Conan 进行 C++ 项目管理
 
