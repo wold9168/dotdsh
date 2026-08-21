@@ -3,9 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: deepseek-official
-  model: deepseek-v4-flash
-  reasoningEffort: high
+  provider: opencode-response
+  model: muse-spark-1.2-contributor-free
 llm-pi-ai:
   providers:
     opencode:
@@ -13,8 +12,8 @@ llm-pi-ai:
       api: openai-completions
       baseURL: https://opencode.ai/zen/v1
       models:
-        - id: muse-spark-1.2-contributor-free
-          name: Muse Spark 1.2 (free)
+        - id: x-preview-f-free
+          name: Ox Alpha Free
           contextWindow: 1048576
           maxTokens: 131072
         - id: mimo-v2.5-free
@@ -33,6 +32,15 @@ llm-pi-ai:
           initialDelayMs: 500
           maxDelayMs: 5000
           jitterRatio: 0.1
+    opencode-response:
+      apiKeyEnv: OPENCODE_RESPONSE_API_KEY
+      api: openai-responses
+      baseURL: https://opencode.ai/zen/v1
+      models:
+        - id: muse-spark-1.2-contributor-free
+          name: Muse Spark 1.2 (free)
+          contextWindow: 1048576
+          maxTokens: 131072
     scnet:
       apiKeyEnv: SCNET_API_KEY
       api: openai-completions
