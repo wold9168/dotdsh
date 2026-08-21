@@ -6,4 +6,28 @@ settings:
 
 importers:
 
-  .: {}
+  .:
+    dependencies:
+      dsh-model-filter:
+        specifier: https://github.com/wold9168/dsh-model-filter/releases/download/v0.1.4/dsh-model-filter.tgz
+        version: https://github.com/wold9168/dsh-model-filter/releases/download/v0.1.4/dsh-model-filter.tgz
+
+packages:
+
+  clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
+
+  dsh-model-filter@https://github.com/wold9168/dsh-model-filter/releases/download/v0.1.4/dsh-model-filter.tgz:
+    resolution: {integrity: sha512-G5qQrDYG3hGpULnAqjrj22UtPsXfFH/rl2XhMvQrSytIMQmhq53nOXiWhRLOGrxGx1TtrkvF+yeNlYcQo72t8A==, tarball: https://github.com/wold9168/dsh-model-filter/releases/download/v0.1.4/dsh-model-filter.tgz}
+    version: 0.1.0
+    peerDependencies:
+      '@deepseek-ai/cordis': '>=4.0.0-rc <5'
+
+snapshots:
+
+  clsx@2.1.1: {}
+
+  dsh-model-filter@https://github.com/wold9168/dsh-model-filter/releases/download/v0.1.4/dsh-model-filter.tgz:
+    dependencies:
+      clsx: 2.1.1
