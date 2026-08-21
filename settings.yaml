@@ -3,8 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: opencode-response
-  model: muse-spark-1.2-contributor-free
+  provider: opencode
+  model: x-preview-f-free
 llm-pi-ai:
   providers:
     opencode:
@@ -117,7 +117,7 @@ llm-pi-ai:
           name: Nemotron 3 Ultra 550b a55b
           contextWindow: 1048576
           maxTokens: 65536
-        - id: nvidia/stepfun-ai/step-3.7-flash
+        - id: stepfun-ai/step-3.7-flash
           name: Step 3.7 Flash
           contextWindow: 262144
           maxTokens: 16384
