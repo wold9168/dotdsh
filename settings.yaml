@@ -3,12 +3,15 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: scnet
-  model: DeepSeek-V4-Flash-0731
+  provider: deepseek-official
+  model: deepseek-v4-flash
+  reasoningEffort: high
 llm-pi-ai:
   providers:
     opencode:
       apiKeyEnv: OPENCODE_API_KEY
+      api: openai-completions
+      baseURL: https://opencode.ai/zen/v1
       models:
         - id: muse-spark-1.2-contributor-free
           name: Muse Spark 1.2 (free)
@@ -87,6 +90,8 @@ llm-pi-ai:
           maxTokens: 131072
     nvidia:
       apiKeyEnv: NVIDIA_API_KEY
+      api: openai-completions
+      baseURL: https://integrate.api.nvidia.com/v1
       models:
         - id: deepseek-ai/deepseek-v4-flash-0731
           name: DeepSeek V4 Flash 0731
@@ -119,6 +124,8 @@ llm-pi-ai:
           jitterRatio: 0.1
     openrouter:
       apiKeyEnv: OPENROUTER_API_KEY
+      api: openai-completions
+      baseURL: https://openrouter.ai/api/v1
       models:
         - id: google/gemma-4-26b-a4b-it:free
           name: "Google: Gemma 4 26B A4B  (free)"
