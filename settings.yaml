@@ -3,14 +3,15 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: openrouter
-  model: google/gemma-4-31b-it:free
+  provider: nvidia
+  model: openai/gpt-oss-120b
 llm-pi-ai:
   providers:
     opencode:
       apiKeyEnv: OPENCODE_API_KEY
       api: openai-completions
       baseURL: https://opencode.ai/zen/v1
+      reasoning: high
       models:
         - id: x-preview-f-free
           name: Ox Alpha Free
@@ -36,6 +37,7 @@ llm-pi-ai:
       apiKeyEnv: OPENCODE_RESPONSE_API_KEY
       api: openai-responses
       baseURL: https://opencode.ai/zen/v1
+      reasoning: high
       models:
         - id: muse-spark-1.2-contributor-free
           name: Muse Spark 1.2 (free)
@@ -45,6 +47,7 @@ llm-pi-ai:
       apiKeyEnv: SCNET_API_KEY
       api: openai-completions
       baseURL: https://api.scnet.cn/api/llm/v1
+      reasoning: high
       retryPolicy:
         mode: normal
         maxRetries: 100
@@ -100,6 +103,7 @@ llm-pi-ai:
       apiKeyEnv: NVIDIA_API_KEY
       api: openai-completions
       baseURL: https://integrate.api.nvidia.com/v1
+      reasoning: high
       models:
         - id: deepseek-ai/deepseek-v4-flash-0731
           name: DeepSeek V4 Flash 0731
@@ -117,6 +121,10 @@ llm-pi-ai:
           name: Nemotron 3 Ultra 550b a55b
           contextWindow: 1048576
           maxTokens: 65536
+        - id: openai/gpt-oss-120b
+          name: gpt-oss-120b
+          contextWindow: 131072
+          maxTokens: 65536
         - id: stepfun-ai/step-3.7-flash
           name: Step 3.7 Flash
           contextWindow: 262144
@@ -133,6 +141,7 @@ llm-pi-ai:
       apiKeyEnv: OPENROUTER_API_KEY
       api: openai-completions
       baseURL: https://openrouter.ai/api/v1
+      reasoning: high
       models:
         - id: nvidia/nemotron-3.5-lightning:free
           name: "NVIDIA: Nemotron 3.5 Lightning (free)"
@@ -159,6 +168,7 @@ llm-pi-ai:
       apiKeyEnv: OPS_NEWAPI_API_KEY
       api: openai-completions
       baseURL: https://newapi.dashboard.kawasirosoft.com/v1
+      reasoning: high
       models:
         - id: deepseek-v4-flash:free
           contextWindow: 200000
@@ -191,8 +201,9 @@ llm-pi-ai:
           contextWindow: 1050000
           maxTokens: 128000
         - id: gpt-oss-120b:free
+          name: gpt-oss-120b:free
           contextWindow: 131072
-          maxTokens: 32768
+          maxTokens: 65536
         - id: gpt-oss-20b:free
           contextWindow: 131072
           maxTokens: 32768
