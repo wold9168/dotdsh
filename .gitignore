@@ -5,6 +5,7 @@
 .anonymous-user-id
 
 # Runtime data — not configuration
+attachments/
 sessions/
 storages/
 .cache/
