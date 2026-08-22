@@ -3,15 +3,14 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: nvidia
-  model: openai/gpt-oss-120b
+  provider: opencode
+  model: x-preview-f-free
 llm-pi-ai:
   providers:
     opencode:
       apiKeyEnv: OPENCODE_API_KEY
       api: openai-completions
       baseURL: https://opencode.ai/zen/v1
-      reasoning: high
       models:
         - id: x-preview-f-free
           name: Ox Alpha Free
@@ -37,7 +36,6 @@ llm-pi-ai:
       apiKeyEnv: OPENCODE_RESPONSE_API_KEY
       api: openai-responses
       baseURL: https://opencode.ai/zen/v1
-      reasoning: high
       models:
         - id: muse-spark-1.2-contributor-free
           name: Muse Spark 1.2 (free)
@@ -47,7 +45,6 @@ llm-pi-ai:
       apiKeyEnv: SCNET_API_KEY
       api: openai-completions
       baseURL: https://api.scnet.cn/api/llm/v1
-      reasoning: high
       retryPolicy:
         mode: normal
         maxRetries: 100
@@ -103,7 +100,6 @@ llm-pi-ai:
       apiKeyEnv: NVIDIA_API_KEY
       api: openai-completions
       baseURL: https://integrate.api.nvidia.com/v1
-      reasoning: high
       models:
         - id: deepseek-ai/deepseek-v4-flash-0731
           name: DeepSeek V4 Flash 0731
@@ -141,7 +137,6 @@ llm-pi-ai:
       apiKeyEnv: OPENROUTER_API_KEY
       api: openai-completions
       baseURL: https://openrouter.ai/api/v1
-      reasoning: high
       models:
         - id: nvidia/nemotron-3.5-lightning:free
           name: "NVIDIA: Nemotron 3.5 Lightning (free)"
@@ -168,7 +163,6 @@ llm-pi-ai:
       apiKeyEnv: OPS_NEWAPI_API_KEY
       api: openai-completions
       baseURL: https://newapi.dashboard.kawasirosoft.com/v1
-      reasoning: high
       models:
         - id: deepseek-v4-flash:free
           contextWindow: 200000
