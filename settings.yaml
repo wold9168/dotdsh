@@ -170,6 +170,10 @@ llm-pi-ai:
         - id: gpt-5.6-luna
           contextWindow: 1048576
           maxTokens: 128000
+        - id: gpt-oss-120b:free
+          name: gpt-oss-120b:free
+          contextWindow: 131072
+          maxTokens: 65536
       retryPolicy:
         mode: normal
         maxRetries: 100
@@ -184,7 +188,8 @@ llm-pi-ai:
       baseURL: https://apihub.agnes-ai.com/v1
       models:
         - id: agnes-2.0-flash
-          contextWindow: 262144
+          contextWindow: 524288
           maxTokens: 65536
+          input: [text, image]
 ui-conversation:
   busyEnter: queue
