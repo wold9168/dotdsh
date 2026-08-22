@@ -3,8 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: opencode
-  model: x-preview-f-free
+  provider: openrouter
+  model: google/gemma-4-31b-it:free
 llm-pi-ai:
   providers:
     opencode:
@@ -121,11 +121,10 @@ llm-pi-ai:
           name: Step 3.7 Flash
           contextWindow: 262144
           maxTokens: 16384
-
       retryPolicy:
         mode: normal
         maxRetries: 100
-        retryableCodes: [ RATE_LIMIT ]
+        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
@@ -135,22 +134,26 @@ llm-pi-ai:
       api: openai-completions
       baseURL: https://openrouter.ai/api/v1
       models:
-        - id: google/gemma-4-26b-a4b-it:free
-          name: "Google: Gemma 4 26B A4B  (free)"
-          contextWindow: 262144
-          maxTokens: 32768
-        - id: google/gemma-4-31b-it:free
-          name: "Google: Gemma 4 31B (free)"
-          contextWindow: 262144
-          maxTokens: 32768
+        - id: nvidia/nemotron-3.5-lightning:free
+          name: "NVIDIA: Nemotron 3.5 Lightning (free)"
+          contextWindow: 1048576
+          maxTokens: 262144
         - id: nvidia/nemotron-3-ultra-550b-a55b:free
           name: "NVIDIA: Nemotron 3 Ultra (free)"
-          contextWindow: 1000000
+          contextWindow: 1048576
           maxTokens: 65536
         - id: z-ai/glm-5.2:free
           name: "GLM 5.2 (free)"
           contextWindow: 256000
           maxTokens: 256000
+      retryPolicy:
+        mode: normal
+        maxRetries: 100
+        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR ]
+        backoff:
+          initialDelayMs: 500
+          maxDelayMs: 5000
+          jitterRatio: 0.1
     ops-newapi:
       displayName: 一通的newapi(free)
       apiKeyEnv: OPS_NEWAPI_API_KEY
