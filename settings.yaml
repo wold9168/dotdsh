@@ -27,7 +27,7 @@ llm-pi-ai:
       retryPolicy:
         mode: normal
         maxRetries: 100
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST ]
+        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
@@ -48,7 +48,7 @@ llm-pi-ai:
       retryPolicy:
         mode: normal
         maxRetries: 100
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST ]
+        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
