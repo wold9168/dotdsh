@@ -3,7 +3,7 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: opencode
+  provider: ops-newapi
   model: x-preview-f-free
 llm-pi-ai:
   providers:
@@ -109,6 +109,9 @@ llm-pi-ai:
           name: Gemma 4 31B
           contextWindow: 262144
           maxTokens: 16384
+        - id: minimaxai/minimax-m3
+          contextWindow: 1048576
+          maxTokens: 393216
         - id: nvidia/nemotron-3.5-lightning-30b-a3b
           name: Nemotron 3.5 Lightning 30b a3b
           contextWindow: 262144
