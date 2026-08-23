@@ -3,8 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: opencode
-  model: x-preview-f-free
+  provider: openrouter
+  model: z-ai/glm-5.2:free
 llm-pi-ai:
   providers:
     opencode:
@@ -16,7 +16,7 @@ llm-pi-ai:
           name: Ox Alpha Free
           contextWindow: 1048576
           maxTokens: 131072
-          input: [ text, image, video ]
+          input: [ text, image ]
         - id: mimo-v2.5-free
           name: MiMo V2.5 Free
           contextWindow: 200000
@@ -167,7 +167,7 @@ llm-pi-ai:
           name: Ox Alpha Free
           contextWindow: 1048576
           maxTokens: 131072
-          input: [ text, image, video ]
+          input: [ text, image ]
       retryPolicy:
         mode: normal
         maxRetries: 100
