@@ -3,8 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: agnes
-  model: agnes-2.0-flash
+  provider: opencode
+  model: x-preview-f-free
 llm-pi-ai:
   providers:
     opencode:
@@ -16,6 +16,7 @@ llm-pi-ai:
           name: Ox Alpha Free
           contextWindow: 1048576
           maxTokens: 131072
+          input: [ text, image, video ]
         - id: mimo-v2.5-free
           name: MiMo V2.5 Free
           contextWindow: 200000
@@ -112,6 +113,10 @@ llm-pi-ai:
         - id: minimaxai/minimax-m3
           contextWindow: 1048576
           maxTokens: 393216
+        - id: moonshotai/kimi-k3
+          name: Kimi K3
+          contextWindow: 1048576
+          maxTokens: 131072
         - id: nvidia/nemotron-3.5-lightning-30b-a3b
           name: Nemotron 3.5 Lightning 30b a3b
           contextWindow: 262144
@@ -128,6 +133,11 @@ llm-pi-ai:
           name: Step 3.7 Flash
           contextWindow: 262144
           maxTokens: 16384
+        - id: thinkingmachines/inkling
+          name: inkling
+          contextWindow: 262144
+          maxTokens: 262144
+          input: [ text, image ]
       retryPolicy:
         mode: normal
         maxRetries: 100
@@ -153,6 +163,11 @@ llm-pi-ai:
           name: "GLM 5.2 (free)"
           contextWindow: 256000
           maxTokens: 256000
+        - id: stealth/ox-alpha
+          name: Ox Alpha Free
+          contextWindow: 1048576
+          maxTokens: 131072
+          input: [ text, image, video ]
       retryPolicy:
         mode: normal
         maxRetries: 100
@@ -190,6 +205,9 @@ llm-pi-ai:
         - id: agnes-2.0-flash
           contextWindow: 524288
           maxTokens: 65536
-          input: [text, image]
+          input: [ text, image ]
 ui-conversation:
   busyEnter: queue
+web-search-deepseek:
+  baseURL: https://api.langsearch.com/v1/web-search
+  maxUses: 10
