@@ -3,8 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: openrouter
-  model: z-ai/glm-5.2:free
+  provider: opencode
+  model: x-preview-f-free
 llm-pi-ai:
   providers:
     opencode:
@@ -27,8 +27,8 @@ llm-pi-ai:
           maxTokens: 128000
       retryPolicy:
         mode: normal
-        maxRetries: 100
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR ]
+        maxRetries: 1000
+        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
@@ -42,18 +42,18 @@ llm-pi-ai:
           name: Muse Spark 1.2 (free)
           contextWindow: 1048576
           maxTokens: 131072
+      retryPolicy:
+        mode: normal
+        maxRetries: 1000
+        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
+        backoff:
+          initialDelayMs: 500
+          maxDelayMs: 5000
+          jitterRatio: 0.1          
     scnet:
       apiKeyEnv: SCNET_API_KEY
       api: openai-completions
       baseURL: https://api.scnet.cn/api/llm/v1
-      retryPolicy:
-        mode: normal
-        maxRetries: 100
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR ]
-        backoff:
-          initialDelayMs: 500
-          maxDelayMs: 5000
-          jitterRatio: 0.1
       models:
         - id: DeepSeek-V4-Flash
           contextWindow: 1000000
@@ -97,6 +97,14 @@ llm-pi-ai:
         - id: Qwen3.8-Max
           contextWindow: 1000000
           maxTokens: 131072
+      retryPolicy:
+        mode: normal
+        maxRetries: 1000
+        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
+        backoff:
+          initialDelayMs: 500
+          maxDelayMs: 5000
+          jitterRatio: 0.1
     nvidia:
       apiKeyEnv: NVIDIA_API_KEY
       api: openai-completions
@@ -140,8 +148,8 @@ llm-pi-ai:
           input: [ text, image ]
       retryPolicy:
         mode: normal
-        maxRetries: 100
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR ]
+        maxRetries: 1000
+        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
@@ -170,8 +178,8 @@ llm-pi-ai:
           input: [ text, image ]
       retryPolicy:
         mode: normal
-        maxRetries: 100
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR ]
+        maxRetries: 1000
+        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
@@ -191,8 +199,8 @@ llm-pi-ai:
           maxTokens: 65536
       retryPolicy:
         mode: normal
-        maxRetries: 100
-        retryableCodes: [ RATE_LIMIT ]
+        maxRetries: 1000
+        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
@@ -206,6 +214,15 @@ llm-pi-ai:
           contextWindow: 524288
           maxTokens: 65536
           input: [ text, image ]
+      retryPolicy:
+        mode: normal
+        maxRetries: 1000
+        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
+        backoff:
+          initialDelayMs: 500
+          maxDelayMs: 5000
+          jitterRatio: 0.1
+
 ui-conversation:
   busyEnter: queue
 web-search-deepseek:
