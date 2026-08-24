@@ -3,8 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: opencode
-  model: x-preview-f-free
+  provider: nvidia
+  model: thinkingmachines/inkling
 llm-pi-ai:
   providers:
     opencode:
@@ -28,7 +28,15 @@ llm-pi-ai:
       retryPolicy:
         mode: normal
         maxRetries: 1000
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
+        retryableCodes:
+          [
+            RATE_LIMIT,
+            SERVER,
+            TRANSPORT,
+            INVALID_REQUEST,
+            PI_AI_ERROR,
+            EMPTY_RESPONSE
+          ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
@@ -45,11 +53,19 @@ llm-pi-ai:
       retryPolicy:
         mode: normal
         maxRetries: 1000
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
+        retryableCodes:
+          [
+            RATE_LIMIT,
+            SERVER,
+            TRANSPORT,
+            INVALID_REQUEST,
+            PI_AI_ERROR,
+            EMPTY_RESPONSE
+          ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
-          jitterRatio: 0.1          
+          jitterRatio: 0.1
     scnet:
       apiKeyEnv: SCNET_API_KEY
       api: openai-completions
@@ -59,7 +75,7 @@ llm-pi-ai:
           contextWindow: 1000000
           maxTokens: 393216
         - id: DeepSeek-V4-Flash-0731
-          contextWindow: 1000000
+          contextWindow: 1048576
           maxTokens: 393216
         - id: DeepSeek-V4-Pro
           contextWindow: 1000000
@@ -100,7 +116,15 @@ llm-pi-ai:
       retryPolicy:
         mode: normal
         maxRetries: 1000
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
+        retryableCodes:
+          [
+            RATE_LIMIT,
+            SERVER,
+            TRANSPORT,
+            INVALID_REQUEST,
+            PI_AI_ERROR,
+            EMPTY_RESPONSE
+          ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
@@ -121,10 +145,12 @@ llm-pi-ai:
         - id: minimaxai/minimax-m3
           contextWindow: 1048576
           maxTokens: 393216
+          name: Minimax M3
         - id: moonshotai/kimi-k3
           name: Kimi K3
           contextWindow: 1048576
           maxTokens: 131072
+          input: [ text, image ]
         - id: nvidia/nemotron-3.5-lightning-30b-a3b
           name: Nemotron 3.5 Lightning 30b a3b
           contextWindow: 262144
@@ -145,11 +171,21 @@ llm-pi-ai:
           name: inkling
           contextWindow: 262144
           maxTokens: 262144
-          input: [ text, image ]
+          input:
+            - text
+            - image
       retryPolicy:
         mode: normal
         maxRetries: 1000
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
+        retryableCodes:
+          [
+            RATE_LIMIT,
+            SERVER,
+            TRANSPORT,
+            INVALID_REQUEST,
+            PI_AI_ERROR,
+            EMPTY_RESPONSE
+          ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
@@ -179,7 +215,15 @@ llm-pi-ai:
       retryPolicy:
         mode: normal
         maxRetries: 1000
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
+        retryableCodes:
+          [
+            RATE_LIMIT,
+            SERVER,
+            TRANSPORT,
+            INVALID_REQUEST,
+            PI_AI_ERROR,
+            EMPTY_RESPONSE
+          ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
@@ -200,7 +244,15 @@ llm-pi-ai:
       retryPolicy:
         mode: normal
         maxRetries: 1000
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
+        retryableCodes:
+          [
+            RATE_LIMIT,
+            SERVER,
+            TRANSPORT,
+            INVALID_REQUEST,
+            PI_AI_ERROR,
+            EMPTY_RESPONSE
+          ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
@@ -217,7 +269,41 @@ llm-pi-ai:
       retryPolicy:
         mode: normal
         maxRetries: 1000
-        retryableCodes: [ RATE_LIMIT, SERVER, TRANSPORT, INVALID_REQUEST, PI_AI_ERROR, EMPTY_RESPONSE ]
+        retryableCodes:
+          [
+            RATE_LIMIT,
+            SERVER,
+            TRANSPORT,
+            INVALID_REQUEST,
+            PI_AI_ERROR,
+            EMPTY_RESPONSE
+          ]
+        backoff:
+          initialDelayMs: 500
+          maxDelayMs: 5000
+          jitterRatio: 0.1
+    toughc-llamacpp:
+      api: openai-completions
+      baseURL: http://c.tough:8006
+      models:
+        - id: /models/Qwen3.8-27B-Q4.gguf
+        - id: /models/Qwen3.5-9B-Q8_0.gguf
+        - id: /models/Qwen3.5-9B-Q6_K.gguf
+          contextWindow: 262144
+          maxTokens: 131072
+      apiKeyEnv: TOUGHC_LLAMACPP_API_KEY
+      retryPolicy:
+        mode: normal
+        maxRetries: 1000
+        retryableCodes:
+          [
+            RATE_LIMIT,
+            SERVER,
+            TRANSPORT,
+            INVALID_REQUEST,
+            PI_AI_ERROR,
+            EMPTY_RESPONSE
+          ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
