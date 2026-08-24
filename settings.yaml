@@ -16,7 +16,7 @@ llm-pi-ai:
           name: Ox Alpha Free
           contextWindow: 1048576
           maxTokens: 131072
-          input: [ text, image ]
+          input: [text, image]
         - id: mimo-v2.5-free
           name: MiMo V2.5 Free
           contextWindow: 200000
@@ -35,7 +35,7 @@ llm-pi-ai:
             TRANSPORT,
             INVALID_REQUEST,
             PI_AI_ERROR,
-            EMPTY_RESPONSE
+            EMPTY_RESPONSE,
           ]
         backoff:
           initialDelayMs: 500
@@ -60,7 +60,7 @@ llm-pi-ai:
             TRANSPORT,
             INVALID_REQUEST,
             PI_AI_ERROR,
-            EMPTY_RESPONSE
+            EMPTY_RESPONSE,
           ]
         backoff:
           initialDelayMs: 500
@@ -123,7 +123,7 @@ llm-pi-ai:
             TRANSPORT,
             INVALID_REQUEST,
             PI_AI_ERROR,
-            EMPTY_RESPONSE
+            EMPTY_RESPONSE,
           ]
         backoff:
           initialDelayMs: 500
@@ -150,7 +150,7 @@ llm-pi-ai:
           name: Kimi K3
           contextWindow: 1048576
           maxTokens: 131072
-          input: [ text, image ]
+          input: [text, image]
         - id: nvidia/nemotron-3.5-lightning-30b-a3b
           name: Nemotron 3.5 Lightning 30b a3b
           contextWindow: 262144
@@ -184,7 +184,7 @@ llm-pi-ai:
             TRANSPORT,
             INVALID_REQUEST,
             PI_AI_ERROR,
-            EMPTY_RESPONSE
+            EMPTY_RESPONSE,
           ]
         backoff:
           initialDelayMs: 500
@@ -211,7 +211,7 @@ llm-pi-ai:
           name: Ox Alpha Free
           contextWindow: 1048576
           maxTokens: 131072
-          input: [ text, image ]
+          input: [text, image]
       retryPolicy:
         mode: normal
         maxRetries: 1000
@@ -222,7 +222,7 @@ llm-pi-ai:
             TRANSPORT,
             INVALID_REQUEST,
             PI_AI_ERROR,
-            EMPTY_RESPONSE
+            EMPTY_RESPONSE,
           ]
         backoff:
           initialDelayMs: 500
@@ -251,7 +251,7 @@ llm-pi-ai:
             TRANSPORT,
             INVALID_REQUEST,
             PI_AI_ERROR,
-            EMPTY_RESPONSE
+            EMPTY_RESPONSE,
           ]
         backoff:
           initialDelayMs: 500
@@ -265,7 +265,7 @@ llm-pi-ai:
         - id: agnes-2.0-flash
           contextWindow: 524288
           maxTokens: 65536
-          input: [ text, image ]
+          input: [text, image]
       retryPolicy:
         mode: normal
         maxRetries: 1000
@@ -276,7 +276,7 @@ llm-pi-ai:
             TRANSPORT,
             INVALID_REQUEST,
             PI_AI_ERROR,
-            EMPTY_RESPONSE
+            EMPTY_RESPONSE,
           ]
         backoff:
           initialDelayMs: 500
@@ -302,13 +302,41 @@ llm-pi-ai:
             TRANSPORT,
             INVALID_REQUEST,
             PI_AI_ERROR,
-            EMPTY_RESPONSE
+            EMPTY_RESPONSE,
           ]
         backoff:
           initialDelayMs: 500
           maxDelayMs: 5000
           jitterRatio: 0.1
-
+    # tokeness:
+    #   api: openai-completions
+    #   baseURL: https://n.tokeness.io/v1
+    #   apiKeyEnv: TOKENESS_API_KEY
+    #   models:
+    #     - id: tokeness/free
+    #       contextWindow: 1048576
+    #       maxTokens: 65536
+    #       input: [text, image]
+    #     - id: deepseek-v4-flash
+    #     - id: deepseek-v4-flash-vision-exp
+    #     - id: deepseek-v4-pro
+    #     - id: glm-5.3
+    #   retryPolicy:
+    #     mode: normal
+    #     maxRetries: 1000
+    #     retryableCodes:
+    #       [
+    #         RATE_LIMIT,
+    #         SERVER,
+    #         TRANSPORT,
+    #         INVALID_REQUEST,
+    #         PI_AI_ERROR,
+    #         EMPTY_RESPONSE,
+    #       ]
+    #     backoff:
+    #       initialDelayMs: 500
+    #       maxDelayMs: 5000
+    #       jitterRatio: 0.1
 ui-conversation:
   busyEnter: queue
 web-search-deepseek:
