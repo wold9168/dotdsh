@@ -12,11 +12,6 @@ llm-pi-ai:
       api: openai-completions
       baseURL: https://opencode.ai/zen/v1
       models:
-        - id: x-preview-f-free
-          name: Ox Alpha Free
-          contextWindow: 1048576
-          maxTokens: 131072
-          input: [text, image]
         - id: mimo-v2.5-free
           name: MiMo V2.5 Free
           contextWindow: 200000
@@ -211,11 +206,6 @@ llm-pi-ai:
           name: "GLM 5.2 (free)"
           contextWindow: 256000
           maxTokens: 256000
-        - id: stealth/ox-alpha
-          name: Ox Alpha Free
-          contextWindow: 1048576
-          maxTokens: 131072
-          input: [text, image]
       retryPolicy:
         mode: normal
         maxRetries: 1000
