@@ -3,8 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: nvidia
-  model: nvidia/nemotron-3-ultra-550b-a55b
+  provider: scnet
+  model: DeepSeek-V4-Flash-0731
 llm-pi-ai:
   providers:
     opencode:
@@ -31,7 +31,7 @@ llm-pi-ai:
             INVALID_REQUEST,
             PI_AI_ERROR,
             EMPTY_RESPONSE,
-            TIMEOUT,
+            TIMEOUT
           ]
         backoff:
           initialDelayMs: 500
@@ -57,7 +57,7 @@ llm-pi-ai:
             INVALID_REQUEST,
             PI_AI_ERROR,
             EMPTY_RESPONSE,
-            TIMEOUT,
+            TIMEOUT
           ]
         backoff:
           initialDelayMs: 500
@@ -69,13 +69,16 @@ llm-pi-ai:
       baseURL: https://api.scnet.cn/api/llm/v1
       models:
         - id: DeepSeek-V4-Flash
-          contextWindow: 1000000
+          contextWindow: 1048576
           maxTokens: 393216
         - id: DeepSeek-V4-Flash-0731
           contextWindow: 1048576
           maxTokens: 393216
         - id: DeepSeek-V4-Pro
-          contextWindow: 1000000
+          contextWindow: 1048576
+          maxTokens: 393216
+        - id: DeepSeek-V4-Pro-0813
+          contextWindow: 1048576
           maxTokens: 393216
         - id: GLM-5
           contextWindow: 204800
@@ -121,7 +124,7 @@ llm-pi-ai:
             INVALID_REQUEST,
             PI_AI_ERROR,
             EMPTY_RESPONSE,
-            TIMEOUT,
+            TIMEOUT
           ]
         backoff:
           initialDelayMs: 500
@@ -148,7 +151,7 @@ llm-pi-ai:
           name: Kimi K3
           contextWindow: 1048576
           maxTokens: 131072
-          input: [text, image]
+          input: [ text, image ]
         - id: nvidia/nemotron-3.5-lightning-30b-a3b
           name: Nemotron 3.5 Lightning 30b a3b
           contextWindow: 262144
@@ -183,7 +186,7 @@ llm-pi-ai:
             INVALID_REQUEST,
             PI_AI_ERROR,
             EMPTY_RESPONSE,
-            TIMEOUT,
+            TIMEOUT
           ]
         backoff:
           initialDelayMs: 500
@@ -217,7 +220,7 @@ llm-pi-ai:
             INVALID_REQUEST,
             PI_AI_ERROR,
             EMPTY_RESPONSE,
-            TIMEOUT,
+            TIMEOUT
           ]
         backoff:
           initialDelayMs: 500
@@ -247,7 +250,7 @@ llm-pi-ai:
             INVALID_REQUEST,
             PI_AI_ERROR,
             EMPTY_RESPONSE,
-            TIMEOUT,
+            TIMEOUT
           ]
         backoff:
           initialDelayMs: 500
@@ -261,7 +264,7 @@ llm-pi-ai:
         - id: agnes-2.0-flash
           contextWindow: 524288
           maxTokens: 65536
-          input: [text, image]
+          input: [ text, image ]
       retryPolicy:
         mode: normal
         maxRetries: 1000
@@ -273,7 +276,7 @@ llm-pi-ai:
             INVALID_REQUEST,
             PI_AI_ERROR,
             EMPTY_RESPONSE,
-            TIMEOUT,
+            TIMEOUT
           ]
         backoff:
           initialDelayMs: 500
