@@ -3,8 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: scnet
-  model: DeepSeek-V4-Flash-0731
+  provider: nvidia
+  model: nvidia/nemotron-3-ultra-550b-a55b
 llm-pi-ai:
   providers:
     opencode:
@@ -323,3 +323,16 @@ ui-conversation:
 web-search-deepseek:
   baseURL: https://api.langsearch.com/v1/web-search
   maxUses: 10
+subagent-model-selection:
+  enabled: true
+  allowedModels:
+    - provider: agnes
+      model: agnes-2.0-flash
+    - provider: nvidia
+      model: nvidia/nemotron-3-ultra-550b-a55b
+    - provider: nvidia
+      model: nvidia/nemotron-3.5-lightning-30b-a3b
+ui-theme:
+  fontSize: 16
+ui-chat:
+  transcriptView: compact
