@@ -4,7 +4,7 @@ locale:
   preference: zh
 agent-default-model:
   provider: nvidia
-  model: nvidia/nemotron-3-ultra-550b-a55b
+  model: deepseek-ai/deepseek-v4-pro-0813
 llm-pi-ai:
   providers:
     opencode:
@@ -20,32 +20,6 @@ llm-pi-ai:
           name: Nemotron 3 Ultra Free
           contextWindow: 1000000
           maxTokens: 128000
-      retryPolicy:
-        mode: normal
-        maxRetries: 1000
-        retryableCodes:
-          [
-            RATE_LIMIT,
-            SERVER,
-            TRANSPORT,
-            INVALID_REQUEST,
-            PI_AI_ERROR,
-            EMPTY_RESPONSE,
-            TIMEOUT
-          ]
-        backoff:
-          initialDelayMs: 500
-          maxDelayMs: 5000
-          jitterRatio: 0.1
-    opencode-response:
-      apiKeyEnv: OPENCODE_RESPONSE_API_KEY
-      api: openai-responses
-      baseURL: https://opencode.ai/zen/v1
-      models:
-        - id: muse-spark-1.2-contributor-free
-          name: Muse Spark 1.2 (free)
-          contextWindow: 1048576
-          maxTokens: 131072
       retryPolicy:
         mode: normal
         maxRetries: 1000
