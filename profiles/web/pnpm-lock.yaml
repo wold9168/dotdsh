@@ -6,4 +6,8 @@ settings:
 
 importers:
 
-  .: {}
+  .:
+    dependencies:
+      dsh-free-search:
+        specifier: link:/home/wold9168/Documents/_WIP/_util/dsh-free-search
+        version: link:../../../Documents/_WIP/_util/dsh-free-search

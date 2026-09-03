@@ -5,9 +5,13 @@
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "@deepseek-ai/dsh-web-app"
+        "@deepseek-ai/dsh-web-app",
+        "dsh-free-search"
       ],
       "patchReload": "live"
     }
+  },
+  "dependencies": {
+    "dsh-free-search": "link:/home/wold9168/Documents/_WIP/_util/dsh-free-search"
   }
 }
