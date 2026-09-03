@@ -251,8 +251,8 @@ llm-pi-ai:
       api: openai-completions
       baseURL: https://apihub.agnes-ai.com/v1
       models:
-        - id: agnes-2.0-flash
-          name: agnes-2.0-flash (agnes)
+        - id: agnes-2.5-flash
+          name: agnes-2.5-flash (agnes)
           contextWindow: 524288
           maxTokens: 65536
           input: [ text, image ]
