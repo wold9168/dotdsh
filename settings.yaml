@@ -3,8 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: nvidia
-  model: deepseek-ai/deepseek-v4-pro-0813
+  provider: agnes
+  model: agnes-2.0-flash
 llm-pi-ai:
   providers:
     opencode:
@@ -13,11 +13,11 @@ llm-pi-ai:
       baseURL: https://opencode.ai/zen/v1
       models:
         - id: mimo-v2.5-free
-          name: MiMo V2.5 Free
+          name: MiMo V2.5 Free (opencode)
           contextWindow: 200000
           maxTokens: 32000
         - id: nemotron-3-ultra-free
-          name: Nemotron 3 Ultra Free
+          name: Nemotron 3 Ultra Free (opencode)
           contextWindow: 1000000
           maxTokens: 128000
       retryPolicy:
@@ -43,48 +43,63 @@ llm-pi-ai:
       baseURL: https://api.scnet.cn/api/llm/v1
       models:
         - id: DeepSeek-V4-Flash
+          name: DeepSeek V4 Flash (scnet)
           contextWindow: 1048576
           maxTokens: 393216
         - id: DeepSeek-V4-Flash-0731
+          name: DeepSeek V4 Flash 0731 (scnet)
           contextWindow: 1048576
           maxTokens: 393216
         - id: DeepSeek-V4-Pro
+          name: DeepSeek V4 Pro (scnet)
           contextWindow: 1048576
           maxTokens: 393216
         - id: DeepSeek-V4-Pro-0813
+          name: DeepSeek V4 Pro 0813 (scnet)
           contextWindow: 1048576
           maxTokens: 393216
         - id: GLM-5
+          name: GLM 5 (scnet)
           contextWindow: 204800
           maxTokens: 131072
         - id: GLM-5.1
+          name: GLM 5.1 (scnet)
           contextWindow: 200000
           maxTokens: 131072
         - id: GLM-5.2
+          name: GLM 5.2 (scnet)
           contextWindow: 1000000
           maxTokens: 131072
         - id: Kimi-K2.5
+          name: Kimi K2.5 (scnet)
           contextWindow: 262144
           maxTokens: 262144
         - id: Kimi-K2.6
+          name: Kimi K2.6 (scnet)
           contextWindow: 262144
           maxTokens: 262144
         - id: Kimi-K2.7-Code
+          name: Kimi K2.7 Code (scnet)
           contextWindow: 262144
-          maxTokens: 262144
+          maxTokens: 262144 (nvidia)
         - id: Kimi-K3
+          name: Kimi K3 (scnet)
           contextWindow: 1048576
           maxTokens: 131072
         - id: MiniMax-M2.5
+          name: MiniMax M2.5 (scnet)
           contextWindow: 204800
           maxTokens: 131072
         - id: MiniMax-M2.7
+          name: MiniMax M2.7 (scnet)
           contextWindow: 204800
           maxTokens: 131072
         - id: MiniMax-M3
+          name: MiniMax M3 (scnet)
           contextWindow: 1000000
           maxTokens: 128000
         - id: Qwen3.8-Max
+          name: Qwen3.8 Max (scnet)
           contextWindow: 1000000
           maxTokens: 131072
       retryPolicy:
@@ -110,40 +125,40 @@ llm-pi-ai:
       baseURL: https://integrate.api.nvidia.com/v1
       models:
         - id: deepseek-ai/deepseek-v4-flash-0731
-          name: DeepSeek V4 Flash 0731
+          name: DeepSeek V4 Flash 0731 (nvidia)
           contextWindow: 1048576
           maxTokens: 393216
         - id: deepseek-ai/deepseek-v4-pro-0813
-          name: DeepSeek V4 Pro 0813
+          name: DeepSeek V4 Pro 0813 (nvidia)
           contextWindow: 1048576
           maxTokens: 393216
         - id: google/gemma-4-31b-it
-          name: Gemma 4 31B
+          name: Gemma 4 31B (nvidia)
           contextWindow: 262144
           maxTokens: 16384
         - id: moonshotai/kimi-k3
-          name: Kimi K3
+          name: Kimi K3 (nvidia)
           contextWindow: 1048576
           maxTokens: 131072
           input: [ text, image ]
         - id: nvidia/nemotron-3.5-lightning-30b-a3b
-          name: Nemotron 3.5 Lightning 30b a3b
+          name: Nemotron 3.5 Lightning 30b a3b (nvidia)
           contextWindow: 262144
           maxTokens: 262144
         - id: nvidia/nemotron-3-ultra-550b-a55b
-          name: Nemotron 3 Ultra 550b a55b
+          name: Nemotron 3 Ultra 550b a55b (nvidia)
           contextWindow: 1048576
           maxTokens: 65536
         - id: openai/gpt-oss-120b
-          name: gpt-oss-120b
+          name: gpt-oss-120b (nvidia)
           contextWindow: 131072
           maxTokens: 65536
         - id: stepfun-ai/step-3.7-flash
-          name: Step 3.7 Flash
+          name: Step 3.7 Flash (nvidia)
           contextWindow: 262144
           maxTokens: 16384
         - id: thinkingmachines/inkling
-          name: inkling
+          name: inkling (nvidia)
           contextWindow: 262144
           maxTokens: 262144
           input:
@@ -172,15 +187,15 @@ llm-pi-ai:
       baseURL: https://openrouter.ai/api/v1
       models:
         - id: nvidia/nemotron-3.5-lightning:free
-          name: "NVIDIA: Nemotron 3.5 Lightning (free)"
+          name: "NVIDIA: Nemotron 3.5 Lightning (openrouter)"
           contextWindow: 1048576
           maxTokens: 262144
         - id: nvidia/nemotron-3-ultra-550b-a55b:free
-          name: "NVIDIA: Nemotron 3 Ultra (free)"
+          name: "NVIDIA: Nemotron 3 Ultra (openrouter)"
           contextWindow: 1048576
           maxTokens: 65536
         - id: z-ai/glm-5.2:free
-          name: "GLM 5.2 (free)"
+          name: "GLM 5.2 (openrouter)"
           contextWindow: 256000
           maxTokens: 256000
       retryPolicy:
@@ -207,10 +222,11 @@ llm-pi-ai:
       baseURL: https://newapi.dashboard.kawasirosoft.com/v1
       models:
         - id: gpt-5.6-luna
+          name: gpt-5.6-luna (ops-newapi)
           contextWindow: 1048576
           maxTokens: 128000
         - id: gpt-oss-120b:free
-          name: gpt-oss-120b:free
+          name: gpt-oss-120b (ops-newapi)
           contextWindow: 131072
           maxTokens: 65536
       retryPolicy:
@@ -236,6 +252,7 @@ llm-pi-ai:
       baseURL: https://apihub.agnes-ai.com/v1
       models:
         - id: agnes-2.0-flash
+          name: agnes-2.0-flash (agnes)
           contextWindow: 524288
           maxTokens: 65536
           input: [ text, image ]
@@ -262,6 +279,7 @@ llm-pi-ai:
       baseURL: http://c.tough:1919/v1
       models:
         - id: Qwen3.6-35B-A3B-NVFP4
+          name: Qwen3.6-35B-A3B-NVFP4 (toughc-freetoken)
           contextWindow: 150000
     # tokeness:
     #   api: openai-completions
@@ -292,11 +310,43 @@ llm-pi-ai:
     #       initialDelayMs: 500
     #       maxDelayMs: 5000
     #       jitterRatio: 0.1
+    amd-tokenfactory:
+      displayName: AMD TokenFactory
+      apiKeyEnv: AMD_TOKENFACTORY_API_KEY
+      api: openai-completions
+      baseURL: https://developer.amd.com.cn/radeon/api/v1
+      models:
+        - id: DeepSeek-V4-Flash
+          name: DeepSeek V4 Flash 0731 (AMD)
+          contextWindow: 1048576
+          maxTokens: 393216
+        - id: DeepSeek-V4-Flash-Vision-Exp (AMD)
+          name: DeepSeek V4 Flash Vision Exp
+          contextWindow: 1048576
+          maxTokens: 393216
+          input: [ text, image ]
+      retryPolicy:
+        mode: normal
+        maxRetries: 1000
+        retryableCodes:
+          [
+            RATE_LIMIT,
+            SERVER,
+            TRANSPORT,
+            INVALID_REQUEST,
+            PI_AI_ERROR,
+            EMPTY_RESPONSE,
+            TIMEOUT
+          ]
+        backoff:
+          initialDelayMs: 500
+          maxDelayMs: 5000
+          jitterRatio: 0.1
 ui-conversation:
   busyEnter: queue
 web-search-deepseek:
-  baseURL: https://api.langsearch.com/v1/web-search
   maxUses: 10
+  baseURL: none
 subagent-model-selection:
   enabled: true
   allowedModels:
