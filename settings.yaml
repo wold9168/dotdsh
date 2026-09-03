@@ -3,8 +3,9 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: agnes
-  model: agnes-2.0-flash
+  provider: deepseek-official
+  model: deepseek-v4-flash
+  reasoningEffort: high
 llm-pi-ai:
   providers:
     opencode:
@@ -81,7 +82,7 @@ llm-pi-ai:
         - id: Kimi-K2.7-Code
           name: Kimi K2.7 Code (scnet)
           contextWindow: 262144
-          maxTokens: 262144 (nvidia)
+          maxTokens: 262144
         - id: Kimi-K3
           name: Kimi K3 (scnet)
           contextWindow: 1048576
