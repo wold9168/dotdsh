@@ -4,7 +4,7 @@ locale:
   preference: zh
 agent-default-model:
   provider: freellmapi
-  model: auto:coding
+  model: fusion
 llm-pi-ai:
   providers:
     opencode:
