@@ -6,12 +6,18 @@
       "bundles": [
         "@deepseek-ai/dsh-base",
         "@deepseek-ai/dsh-web-app",
-        "dsh-free-search"
+        "dsh-free-search",
+        "dshmarket",
+        "@hyzyn/dsh-codegraph",
+        "@linxin666/dsh-client-ui-git-graph"
       ],
       "patchReload": "live"
     }
   },
   "dependencies": {
-    "dsh-free-search": "link:/home/wold9168/Documents/_WIP/_util/dsh-free-search"
+    "@hyzyn/dsh-codegraph": "^0.1.8",
+    "@linxin666/dsh-client-ui-git-graph": "^0.3.17",
+    "dsh-free-search": "link:/home/wold9168/Documents/_WIP/_util/dsh-free-search",
+    "dshmarket": "^1.44.0"
   }
 }

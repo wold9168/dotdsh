@@ -1,0 +1,19 @@
+{"at":"2026-09-07T04:53:09.200Z","level":"info","event":"region","detail":"no region on record; network check chose china"}
+{"at":"2026-09-07T04:54:21.396Z","level":"info","event":"hot-mount","detail":"@hyzyn/dsh-codegraph: live"}
+{"at":"2026-09-07T04:54:21.407Z","level":"info","event":"install","detail":"@hyzyn/dsh-codegraph exit=0 hot=true"}
+{"at":"2026-09-07T04:58:36.813Z","level":"info","event":"hot-mount","detail":"@linxin666/dsh-client-ui-git-graph: live"}
+{"at":"2026-09-07T04:58:36.822Z","level":"info","event":"install","detail":"@linxin666/dsh-client-ui-git-graph exit=0 hot=true"}
+{"at":"2026-09-07T05:01:19.561Z","level":"info","event":"update","detail":"@hyzyn/dsh-codegraph -> @hyzyn/dsh-codegraph@0.1.8 exit=0"}
+{"at":"2026-09-07T05:01:22.873Z","level":"info","event":"update","detail":"@linxin666/dsh-client-ui-git-graph -> @linxin666/dsh-client-ui-git-graph@0.3.17 exit=0"}
+{"at":"2026-09-07T05:49:47.108Z","level":"info","event":"region","detail":"dsh-synapse: resolved HEAD through an available china route; downloading the commit-pinned GitHub target directly for pnpm integrity"}
+{"at":"2026-09-07T05:50:10.953Z","level":"info","event":"install","detail":"removed 1 orphaned pnpm store tmp dir(s) under ~/.local/share/pnpm/store/v11: _tmp_118491_336d3aac9e1b340cd54d2fe07a1e4451"}
+{"at":"2026-09-07T05:50:10.955Z","level":"error","event":"install","detail":"github:liangmianya/dsh-synapse#56935dc1862e7791b212f6eb2dd26404def5a575 exit=1 err=ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED: Failed to prepare git-hosted package fetched from \"git@github.com:liangmianya/dsh-synapse.git\": The git-hosted package \"dsh-synapse@0.4.1\" needs to execute build scripts but is not in the \"allowBuilds\" allowlist."}
+{"at":"2026-09-07T05:50:15.267Z","level":"info","event":"approve-builds","detail":"allowed build scripts: dsh-synapse, dsh-synapse@git+https://github.com/liangmianya/dsh-synapse.git, dsh-synapse@https://codeload.github.com/liangmianya/dsh-synapse/tar.gz/56935dc1862e7791b212f6eb2dd26404def5a575"}
+{"at":"2026-09-07T05:50:15.817Z","level":"info","event":"region","detail":"dsh-synapse: resolved HEAD through an available china route; downloading the commit-pinned GitHub target directly for pnpm integrity"}
+{"at":"2026-09-07T05:50:21.928Z","level":"info","event":"install","detail":"removed 1 orphaned pnpm store tmp dir(s) under ~/.local/share/pnpm/store/v11: _tmp_119394_da574669548f763ae42b0427199715c6"}
+{"at":"2026-09-07T05:50:21.928Z","level":"error","event":"install","detail":"github:liangmianya/dsh-synapse#56935dc1862e7791b212f6eb2dd26404def5a575 exit=1 err=ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED: Failed to prepare git-hosted package fetched from \"git@github.com:liangmianya/dsh-synapse.git\": The git-hosted package \"dsh-synapse@0.4.1\" needs to execute build scripts but is not in the \"allowBuilds\" allowlist."}
+{"at":"2026-09-07T05:51:21.151Z","level":"info","event":"approve-builds","detail":"allowed build scripts: dsh-synapse, dsh-synapse@git+https://github.com/liangmianya/dsh-synapse.git, dsh-synapse@https://codeload.github.com/liangmianya/dsh-synapse/tar.gz/56935dc1862e7791b212f6eb2dd26404def5a575"}
+{"at":"2026-09-07T05:51:21.708Z","level":"info","event":"region","detail":"dsh-synapse: resolved HEAD through an available china route; downloading the commit-pinned GitHub target directly for pnpm integrity"}
+{"at":"2026-09-07T05:51:48.437Z","level":"info","event":"cancel","detail":"cancelled github:liangmianya/dsh-synapse#56935dc1862e7791b212f6eb2dd26404def5a575"}
+{"at":"2026-09-07T05:51:48.448Z","level":"info","event":"install","detail":"github:liangmianya/dsh-synapse#56935dc1862e7791b212f6eb2dd26404def5a575 exit=null CANCELLED"}
+{"at":"2026-09-07T05:51:57.470Z","level":"info","event":"restart","detail":"scheduled pid=48394 helper=120623"}

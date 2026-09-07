@@ -3,8 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: freellmapi
-  model: fusion
+  provider: scnet
+  model: DeepSeek-V4-Flash-0731
 llm-pi-ai:
   providers:
     opencode:
@@ -385,6 +385,7 @@ llm-pi-ai:
           initialDelayMs: 500
           maxDelayMs: 5000
           jitterRatio: 0.1
+      streamIdleTimeoutMs: 1200000
 ui-conversation:
   busyEnter: queue
 web-search-deepseek:
@@ -393,8 +394,6 @@ web-search-deepseek:
 subagent-model-selection:
   enabled: true
   allowedModels:
-    - provider: agnes
-      model: agnes-2.0-flash
     - provider: nvidia
       model: nvidia/nemotron-3-ultra-550b-a55b
     - provider: nvidia
@@ -406,4 +405,4 @@ ui-theme:
 ui-chat:
   transcriptView: compact
 agent-presets:
-  default: standard
+  default: ptc

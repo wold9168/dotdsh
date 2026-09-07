@@ -3,3 +3,10 @@ packages:
 
 nodeLinker: hoisted
 autoInstallPeers: false
+minimumReleaseAgeExclude:
+  - '@hyzyn/dsh-codegraph@0.1.8'
+  - '@linxin666/dsh-client-ui-git-graph@0.3.17'
+allowBuilds:
+  dsh-synapse: true
+  dsh-synapse@git+https://github.com/liangmianya/dsh-synapse.git: true
+  dsh-synapse@https://codeload.github.com/liangmianya/dsh-synapse/tar.gz/56935dc1862e7791b212f6eb2dd26404def5a575: true
