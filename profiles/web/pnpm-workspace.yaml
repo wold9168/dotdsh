@@ -6,6 +6,7 @@ autoInstallPeers: false
 minimumReleaseAgeExclude:
   - '@hyzyn/dsh-codegraph@0.1.8'
   - '@linxin666/dsh-client-ui-git-graph@0.3.17'
+  - dsh-chat-import@0.11.0
 allowBuilds:
   dsh-synapse: true
   dsh-synapse@git+https://github.com/liangmianya/dsh-synapse.git: true

@@ -14,6 +14,18 @@ importers:
       '@linxin666/dsh-client-ui-git-graph':
         specifier: ^0.3.17
         version: 0.3.17
+      '@linxin666/dsh-client-ui-skill-explorer':
+        specifier: ^0.3.17
+        version: 0.3.17
+      dsh-better-reasoning-effort:
+        specifier: ^0.3.7
+        version: 0.3.7(@deepseek-ai/schemastery@3.18.2)
+      dsh-chat-import:
+        specifier: ^0.11.0
+        version: 0.11.0(@deepseek-ai/schemastery@3.18.2)
+      dsh-context:
+        specifier: ^0.46.0
+        version: 0.46.0(@deepseek-ai/schemastery@3.18.2)
       dsh-free-search:
         specifier: link:/home/wold9168/Documents/_WIP/_util/dsh-free-search
         version: link:../../../Documents/_WIP/_util/dsh-free-search
@@ -45,6 +57,11 @@ packages:
     peerDependencies:
       react: ^18.2.0
 
+  '@linxin666/dsh-client-ui-skill-explorer@0.3.17':
+    resolution: {integrity: sha512-9aBMsQ/MyqCitPBDVYEitGuIsy18KTk9Ou62NX7Hgc1sDpaE0kXP9WZnvo0pHVp+Cx2WF0oyd5SZ+pzBLXRgtA==}
+    peerDependencies:
+      react: ^18.2.0
+
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
@@ -53,6 +70,42 @@ packages:
 
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
+
+  dsh-better-reasoning-effort@0.3.7:
+    resolution: {integrity: sha512-fd5JafkvctvL3huNl1GjS3XmGt9uwLcqJN5lRWmw7ZtDFzfO8QBuAeJA1GhklGs8YMEO1lu0CfUsQOODruo1CQ==}
+    engines: {node: ^20.0.0 || ^22.0.0 || >=24}
+    peerDependencies:
+      '@deepseek-ai/dsh-api-remotes': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-settings': '>=0.1.2-rc.1'
+      '@deepseek-ai/schemastery': ^3.18.0
+      react: ^18.2.0 || ^19.0.0
+
+  dsh-chat-import@0.11.0:
+    resolution: {integrity: sha512-hIFc2qaBWk7bVWzY6MiwvOL/n79BdbsciF7r2Fsf872XtJ0WMWWBYzQRp1aDQpDSTSngJoGuBsBSh+tM0G+MlQ==}
+    engines: {node: '>=22.13'}
+    hasBin: true
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/dsh-client-locale': '>=0.1.0-rc.6'
+      '@deepseek-ai/dsh-tools': ^0.1.0-rc.6
+      '@deepseek-ai/schemastery': '>=3.0.0'
+      react: '>=18.0.0'
+
+  dsh-context@0.46.0:
+    resolution: {integrity: sha512-IMvRUoteehPsEY28NGE7nFLbmAcShBAMC4oocEp/8Tw4cEqNUoQsz7vW7/FCCnRuE/+dJObJnmGUp39Zkq6fDg==}
+    engines: {node: ^22.19.0 || >=24.0.0}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-session': '>=0.1.2-rc.1'
+      '@deepseek-ai/dsh-settings': '>=0.1.2-rc.1'
+      '@deepseek-ai/schemastery': ^3.18.2
+      react: ^18.3.1
+    peerDependenciesMeta:
+      '@deepseek-ai/dsh-client-ui-primitives':
+        optional: true
+      react:
+        optional: true
 
   dshmarket@1.44.0:
     resolution: {integrity: sha512-MNWOVxrBarj1cY9VcrEx1joltnnp/xZHTRqZsM8vJhVe58m6wBG6zEa7/RncsAmwnXkR1499paxwtYi1BAC1sw==}
@@ -66,6 +119,9 @@ packages:
       '@deepseek-ai/schemastery':
         optional: true
 
+  fzstd@0.1.1:
+    resolution: {integrity: sha512-dkuVSOKKwh3eas5VkJy1AW1vFpet8TA/fGmVA5krThl8YcOVE/8ZIoEA1+U1vEn5ckxxhLirSdY837azmbaNHA==}
+
   js-yaml@4.3.2:
     resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
     hasBin: true
@@ -76,6 +132,9 @@ packages:
   undici@7.29.1:
     resolution: {integrity: sha512-RYONW2MeafgYlkVOKYKkA/Ag7BmXqgIWCa8t1m0JcxrQg9pI9lEqRhAOruOBCbAohOa/gkCF+iPi9hrgvTzu6Q==}
     engines: {node: '>=20.18.1'}
+
+  zod@4.5.4:
+    resolution: {integrity: sha512-sC95tT5iHHH9gtpj6A81kh+NEaRAUFN+qlUPDUbRfOMvNf5QCBqsb3WgvnpVtK5Y+4UfA6KqufotuTvMGiTlsA==}
 
 snapshots:
 
@@ -98,11 +157,27 @@ snapshots:
     dependencies:
       schemastery: 3.18.0
 
+  '@linxin666/dsh-client-ui-skill-explorer@0.3.17': {}
+
   '@standard-schema/spec@1.1.0': {}
 
   argparse@2.0.1: {}
 
   cosmokit@1.8.1: {}
+
+  dsh-better-reasoning-effort@0.3.7(@deepseek-ai/schemastery@3.18.2):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
+
+  dsh-chat-import@0.11.0(@deepseek-ai/schemastery@3.18.2):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
+      fzstd: 0.1.1
+
+  dsh-context@0.46.0(@deepseek-ai/schemastery@3.18.2):
+    dependencies:
+      '@deepseek-ai/schemastery': 3.18.2
+      zod: 4.5.4
 
   dshmarket@1.44.0(@deepseek-ai/schemastery@3.18.2):
     dependencies:
@@ -110,6 +185,8 @@ snapshots:
       undici: 7.29.1
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.2
+
+  fzstd@0.1.1: {}
 
   js-yaml@4.3.2:
     dependencies:
@@ -121,3 +198,5 @@ snapshots:
       cosmokit: 1.8.1
 
   undici@7.29.1: {}
+
+  zod@4.5.4: {}

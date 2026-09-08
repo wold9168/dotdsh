@@ -9,7 +9,11 @@
         "dsh-free-search",
         "dshmarket",
         "@hyzyn/dsh-codegraph",
-        "@linxin666/dsh-client-ui-git-graph"
+        "@linxin666/dsh-client-ui-git-graph",
+        "dsh-context",
+        "@linxin666/dsh-client-ui-skill-explorer",
+        "dsh-chat-import",
+        "dsh-better-reasoning-effort"
       ],
       "patchReload": "live"
     }
@@ -17,6 +21,10 @@
   "dependencies": {
     "@hyzyn/dsh-codegraph": "^0.1.8",
     "@linxin666/dsh-client-ui-git-graph": "^0.3.17",
+    "@linxin666/dsh-client-ui-skill-explorer": "^0.3.17",
+    "dsh-better-reasoning-effort": "^0.3.7",
+    "dsh-chat-import": "^0.11.0",
+    "dsh-context": "^0.46.0",
     "dsh-free-search": "link:/home/wold9168/Documents/_WIP/_util/dsh-free-search",
     "dshmarket": "^1.44.0"
   }
