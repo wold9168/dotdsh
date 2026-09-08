@@ -17,3 +17,16 @@
 {"at":"2026-09-07T05:51:48.437Z","level":"info","event":"cancel","detail":"cancelled github:liangmianya/dsh-synapse#56935dc1862e7791b212f6eb2dd26404def5a575"}
 {"at":"2026-09-07T05:51:48.448Z","level":"info","event":"install","detail":"github:liangmianya/dsh-synapse#56935dc1862e7791b212f6eb2dd26404def5a575 exit=null CANCELLED"}
 {"at":"2026-09-07T05:51:57.470Z","level":"info","event":"restart","detail":"scheduled pid=48394 helper=120623"}
+{"at":"2026-09-08T11:20:55.827Z","level":"info","event":"hot-mount","detail":"dsh-context: live"}
+{"at":"2026-09-08T11:20:55.846Z","level":"warn","event":"install-compat","detail":"dsh-context: introduced host-compatibility risks — @deepseek-ai/dsh-session@>=0.1.2-rc.1 vs 0.1.2-alpha.3; @deepseek-ai/dsh-settings@>=0.1.2-rc.1 vs 0.1.2-alpha.3"}
+{"at":"2026-09-08T11:20:55.847Z","level":"info","event":"install","detail":"dsh-context exit=0 hot=true"}
+{"at":"2026-09-08T11:23:51.540Z","level":"info","event":"hot-mount","detail":"@linxin666/dsh-client-ui-skill-explorer: live"}
+{"at":"2026-09-08T11:23:51.555Z","level":"info","event":"install","detail":"@linxin666/dsh-client-ui-skill-explorer exit=0 hot=true"}
+{"at":"2026-09-08T11:25:31.884Z","level":"info","event":"hot-mount","detail":"dsh-chat-import: live"}
+{"at":"2026-09-08T11:25:31.907Z","level":"info","event":"install","detail":"dsh-chat-import exit=0 hot=true"}
+{"at":"2026-09-08T11:26:15.879Z","level":"info","event":"update","detail":"dsh-chat-import -> dsh-chat-import@0.11.0 exit=0"}
+{"at":"2026-09-08T11:26:16.304Z","level":"warn","event":"update-compat","detail":"dsh-context@0.46.0 declares >=0.1.2-rc.1; this host is 0.1.2-alpha.3 — refused before installing"}
+{"at":"2026-09-08T11:26:23.496Z","level":"info","event":"update","detail":"dsh-context -> dsh-context@0.46.0 exit=0"}
+{"at":"2026-09-08T12:06:08.560Z","level":"warn","event":"install","detail":"a too-young release blocks pnpm's lockfile verification (#39) — retrying once with --config.minimumReleaseAge=0"}
+{"at":"2026-09-08T12:06:11.087Z","level":"info","event":"hot-mount","detail":"dsh-better-reasoning-effort: live"}
+{"at":"2026-09-08T12:06:11.106Z","level":"info","event":"install","detail":"dsh-better-reasoning-effort exit=0 hot=true"}
