@@ -7,7 +7,14 @@ minimumReleaseAgeExclude:
   - '@hyzyn/dsh-codegraph@0.1.8'
   - '@linxin666/dsh-client-ui-git-graph@0.3.17'
   - dsh-chat-import@0.11.0
+  - '@linxin666/dsh-client-ui-git-graph@0.3.20'
+  - dsh-better-reasoning-effort@0.3.9
+  - dsh-context@0.49.1
+  - dsh-session-manager@0.4.7
 allowBuilds:
   dsh-synapse: true
   dsh-synapse@git+https://github.com/liangmianya/dsh-synapse.git: true
   dsh-synapse@https://codeload.github.com/liangmianya/dsh-synapse/tar.gz/56935dc1862e7791b212f6eb2dd26404def5a575: true
+  cpu-features: true
+  node-pty: true
+  ssh2: true

@@ -30,3 +30,30 @@
 {"at":"2026-09-08T12:06:08.560Z","level":"warn","event":"install","detail":"a too-young release blocks pnpm's lockfile verification (#39) — retrying once with --config.minimumReleaseAge=0"}
 {"at":"2026-09-08T12:06:11.087Z","level":"info","event":"hot-mount","detail":"dsh-better-reasoning-effort: live"}
 {"at":"2026-09-08T12:06:11.106Z","level":"info","event":"install","detail":"dsh-better-reasoning-effort exit=0 hot=true"}
+{"at":"2026-09-10T14:09:32.300Z","level":"warn","event":"uninstall-blocked","detail":"dsh-free-search: refused while agents are running — session-72fac8c5-8f1c-46d6-b146-bbddc1307b55"}
+{"at":"2026-09-10T14:09:42.056Z","level":"warn","event":"update-blocked","detail":"dsh-free-search: refused while agents are running — session-72fac8c5-8f1c-46d6-b146-bbddc1307b55"}
+{"at":"2026-09-10T14:10:02.679Z","level":"info","event":"update","detail":"dsh-free-search -> dsh-free-search@latest exit=0"}
+{"at":"2026-09-10T14:10:07.152Z","level":"info","event":"update","detail":"@linxin666/dsh-client-ui-git-graph -> @linxin666/dsh-client-ui-git-graph@0.3.20 exit=0"}
+{"at":"2026-09-10T14:10:08.553Z","level":"warn","event":"install","detail":"a too-young release blocks pnpm's lockfile verification (#39) — retrying once with --config.minimumReleaseAge=0"}
+{"at":"2026-09-10T14:10:10.111Z","level":"info","event":"update","detail":"@linxin666/dsh-client-ui-skill-explorer -> @linxin666/dsh-client-ui-skill-explorer@0.3.20 exit=0"}
+{"at":"2026-09-10T14:10:11.974Z","level":"warn","event":"install","detail":"a too-young release blocks pnpm's lockfile verification (#39) — retrying once with --config.minimumReleaseAge=0"}
+{"at":"2026-09-10T14:10:13.768Z","level":"info","event":"update","detail":"dsh-better-reasoning-effort -> dsh-better-reasoning-effort@0.3.9 exit=0"}
+{"at":"2026-09-10T14:10:15.537Z","level":"warn","event":"install","detail":"a too-young release blocks pnpm's lockfile verification (#39) — retrying once with --config.minimumReleaseAge=0"}
+{"at":"2026-09-10T14:10:17.408Z","level":"info","event":"update","detail":"dsh-context -> dsh-context@0.49.1 exit=0"}
+{"at":"2026-09-10T14:10:28.610Z","level":"info","event":"restart","detail":"scheduled pid=3460070 helper=3590236"}
+{"at":"2026-09-11T09:11:15.781Z","level":"warn","event":"install-blocked","detail":"refused while agents are running — session-cd8912e2-c10e-4e33-b423-aac9aca5bc49"}
+{"at":"2026-09-11T09:11:32.656Z","level":"warn","event":"install","detail":"a too-young release blocks pnpm's lockfile verification (#39) — retrying once with --config.minimumReleaseAge=0"}
+{"at":"2026-09-11T09:11:37.045Z","level":"info","event":"hot-mount","detail":"@vectorize-io/hindsight-coding-agents: live"}
+{"at":"2026-09-11T09:11:37.064Z","level":"info","event":"install","detail":"@vectorize-io/hindsight-coding-agents exit=0 hot=true"}
+{"at":"2026-09-11T09:14:48.769Z","level":"warn","event":"install","detail":"a too-young release blocks pnpm's lockfile verification (#39) — retrying once with --config.minimumReleaseAge=0"}
+{"at":"2026-09-11T09:14:50.650Z","level":"info","event":"toggle","detail":"dsh-chat-import -> off: fiber=false"}
+{"at":"2026-09-11T09:14:50.651Z","level":"info","event":"uninstall","detail":"dsh-chat-import exit=0 live-removed=true"}
+{"at":"2026-09-11T09:15:02.852Z","level":"warn","event":"install","detail":"a too-young release blocks pnpm's lockfile verification (#39) — retrying once with --config.minimumReleaseAge=0"}
+{"at":"2026-09-11T09:15:04.694Z","level":"info","event":"install","detail":"dsh-session-manager exit=0 hot=false"}
+{"at":"2026-09-11T09:15:24.807Z","level":"warn","event":"install","detail":"a too-young release blocks pnpm's lockfile verification (#39) — retrying once with --config.minimumReleaseAge=0"}
+{"at":"2026-09-11T09:15:34.160Z","level":"warn","event":"install","detail":"dsh-remote: rolled back manifest residue of the failed run: dsh-remote"}
+{"at":"2026-09-11T09:15:34.160Z","level":"error","event":"install","detail":"dsh-remote exit=1 err=ERR_PNPM_IGNORED_BUILDS: Ignored build scripts: cpu-features@0.0.10, node-pty@1.1.0, ssh2@1.17.0"}
+{"at":"2026-09-11T09:15:35.866Z","level":"info","event":"approve-builds","detail":"allowed build scripts: dsh-synapse, dsh-synapse@git+https://github.com/liangmianya/dsh-synapse.git, dsh-synapse@https://codeload.github.com/liangmianya/dsh-synapse/tar.gz/56935dc1862e7791b212f6eb2dd26404def5a575, cpu-features, node-pty, ssh2"}
+{"at":"2026-09-11T09:15:37.757Z","level":"warn","event":"install","detail":"a too-young release blocks pnpm's lockfile verification (#39) — retrying once with --config.minimumReleaseAge=0"}
+{"at":"2026-09-11T09:15:45.352Z","level":"info","event":"install","detail":"dsh-remote exit=0 hot=false"}
+{"at":"2026-09-11T09:16:05.914Z","level":"info","event":"restart","detail":"scheduled pid=3590257 helper=4006085"}
