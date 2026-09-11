@@ -57,3 +57,5 @@
 {"at":"2026-09-11T09:15:37.757Z","level":"warn","event":"install","detail":"a too-young release blocks pnpm's lockfile verification (#39) — retrying once with --config.minimumReleaseAge=0"}
 {"at":"2026-09-11T09:15:45.352Z","level":"info","event":"install","detail":"dsh-remote exit=0 hot=false"}
 {"at":"2026-09-11T09:16:05.914Z","level":"info","event":"restart","detail":"scheduled pid=3590257 helper=4006085"}
+{"at":"2026-09-11T09:27:48.363Z","level":"info","event":"toggle","detail":"@vectorize-io/hindsight-coding-agents: no loader entry matched"}
+{"at":"2026-09-11T09:27:48.364Z","level":"info","event":"uninstall","detail":"@vectorize-io/hindsight-coding-agents exit=0 live-removed=false"}
