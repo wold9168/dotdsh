@@ -51,6 +51,15 @@ You are a helpful assistant.
 若由你来直接通过 shell 工具进行 commit，则请使用 Assisted-by: AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2] 的形式标注 Commit 信息
 例如： Assisted-by: Claude:claude-3-opus coccinelle sparse
 
+## 注释
+
+如果项目本身就有注释，那么模仿项目本身的注释风格，否则在对应语言的注释最佳实践的基础上，遵循如下注释原则：
+- 避免在函数体内等业务代码块内写注释，仅在函数定义处给出注释
+- 尽量为常量起一个自描述的名称而避免注释它
+- 为所有的魔法数字（magic number）提供注释阐明其用意
+- 注释应当描述清楚、简明易懂
+- 缺省情况下，注释使用英文作为语言
+
 ## miscs
 
 如果你需要验证一个脚本，使用 cd $(mktemp -d) 去到 /tmp 目录下。
