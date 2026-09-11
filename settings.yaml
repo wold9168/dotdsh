@@ -3,9 +3,9 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: toughc-freetoken
-  model: Qwen3.6-35B-A3B-NVFP4
-  reasoningEffort: high
+  provider: freellmapi
+  model: auto:stable
+  reasoningEffort: medium
 llm-pi-ai:
   providers:
     opencode:
@@ -738,6 +738,22 @@ llm-pi-ai:
             thinkingFormat: openai
             supportsReasoningEffort: true
             supportsDeveloperRole: false
+        - id: auto:stable
+          name: Auto:stable (272k)
+          contextWindow: 262144
+          maxTokens: 65536
+          input:
+            - text
+            - image
+          reasoningEfforts:
+            off: null
+            low: low
+            medium: medium
+            high: high
+          compat:
+            thinkingFormat: openai
+            supportsReasoningEffort: true
+            supportsDeveloperRole: false
         - id: fusion
           name: Fusion (272k)
           contextWindow: 262144
@@ -785,7 +801,7 @@ subagent-model-selection:
     - provider: nvidia
       model: nvidia/nemotron-3.5-lightning-30b-a3b
     - provider: freellmapi
-      model: auto:coding
+      model: auto:stable
 ui-theme:
   fontSize: 16
 ui-chat:
