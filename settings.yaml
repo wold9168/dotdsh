@@ -3,9 +3,9 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: toughc-freetoken
-  model: Qwen3.6-35B-A3B-NVFP4
-  reasoningEffort: high
+  provider: openrouter
+  model: nvidia/nemotron-3-ultra-550b-a55b:free
+  reasoningEffort: medium
 llm-pi-ai:
   providers:
     opencode:
@@ -225,23 +225,6 @@ llm-pi-ai:
           compat:
             thinkingFormat: openai
             supportsReasoningEffort: true
-        - id: z-ai/glm-5.2:free
-          name: GLM 5.2 (openrouter)
-          contextWindow: 256000
-          maxTokens: 256000
-          reasoningEfforts:
-            off: none
-            minimal: minimal
-            low: low
-            medium: medium
-            high: high
-            xhigh: xhigh
-            max: max
-          compat:
-            thinkingFormat: zai
-            supportsReasoningEffort: true
-          input:
-            - text
       retryPolicy:
         mode: normal
         maxRetries: 1000
@@ -819,3 +802,5 @@ chat-import:
   importSystemPrompt: true
 dsh-tui:
   lang: zh
+session-pin:
+  pinned: []
