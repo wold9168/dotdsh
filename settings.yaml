@@ -4,8 +4,8 @@ locale:
   preference: zh
 agent-default-model:
   provider: openrouter
-  model: nvidia/nemotron-3-ultra-550b-a55b:free
-  reasoningEffort: medium
+  model: inclusionai/ling-3.0-flash-fin:free
+  reasoningEffort: high
 llm-pi-ai:
   providers:
     opencode:
@@ -222,6 +222,30 @@ llm-pi-ai:
             low: low
             medium: medium
             high: high
+          compat:
+            thinkingFormat: openai
+            supportsReasoningEffort: true
+        - id: inclusionai/ling-3.0-flash-fin:free
+          name: "inclusionAI: Ling 3.0 Flash Fin (openrouter)"
+          contextWindow: 262144
+          reasoningEfforts:
+            off: null
+            low: low
+            medium: medium
+            high: high
+          reasoningEffortsAutofilled: 2
+          compat:
+            thinkingFormat: openai
+            supportsReasoningEffort: true
+        - id: thinkingmachines/inkling:free
+          name: Inkling (openrouter)
+          contextWindow: 262144
+          reasoningEfforts:
+            off: null
+            low: low
+            medium: medium
+            high: high
+          reasoningEffortsAutofilled: 4
           compat:
             thinkingFormat: openai
             supportsReasoningEffort: true
