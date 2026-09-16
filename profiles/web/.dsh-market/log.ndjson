@@ -150,3 +150,11 @@
 {"at":"2026-09-13T10:38:58.791Z","level":"info","event":"restart","detail":"scheduled pid=1661540 helper=2085769"}
 {"at":"2026-09-13T10:39:05.677Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
 {"at":"2026-09-13T10:39:05.678Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}
+{"at":"2026-09-16T16:06:17.350Z","level":"info","event":"update","detail":"@hyzyn/dsh-codegraph -> @hyzyn/dsh-codegraph@0.3.0 exit=0"}
+{"at":"2026-09-16T16:06:21.107Z","level":"info","event":"update","detail":"@linxin666/dsh-client-ui-git-graph -> @linxin666/dsh-client-ui-git-graph@0.3.23 exit=0"}
+{"at":"2026-09-16T16:06:24.315Z","level":"info","event":"update","detail":"@linxin666/dsh-client-ui-skill-explorer -> @linxin666/dsh-client-ui-skill-explorer@0.3.23 exit=0"}
+{"at":"2026-09-16T16:06:27.092Z","level":"info","event":"update","detail":"dsh-context -> dsh-context@0.53.0 exit=0"}
+{"at":"2026-09-16T16:06:30.810Z","level":"info","event":"update","detail":"dsh-free-search -> dsh-free-search@0.4.28 exit=0"}
+{"at":"2026-09-16T16:06:33.446Z","level":"info","event":"update","detail":"dsh-session-manager -> dsh-session-manager@0.4.11 exit=0"}
+{"at":"2026-09-16T16:18:41.141Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
+{"at":"2026-09-16T16:18:41.141Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}

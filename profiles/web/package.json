@@ -22,15 +22,15 @@
     }
   },
   "dependencies": {
-    "@hyzyn/dsh-codegraph": "^0.1.10",
-    "@linxin666/dsh-client-ui-git-graph": "^0.3.21",
-    "@linxin666/dsh-client-ui-skill-explorer": "^0.3.21",
+    "@hyzyn/dsh-codegraph": "^0.3.0",
+    "@linxin666/dsh-client-ui-git-graph": "^0.3.23",
+    "@linxin666/dsh-client-ui-skill-explorer": "^0.3.23",
     "@nanmicoder/dsh-agent-teams": "^0.1.18",
     "@tt-a1i/archify-dsh": "^0.1.0",
     "dsh-better-reasoning-effort": "^0.3.10",
-    "dsh-context": "^0.51.0",
-    "dsh-free-search": "^0.4.24",
-    "dsh-session-manager": "^0.4.10",
+    "dsh-context": "^0.53.0",
+    "dsh-free-search": "^0.4.28",
+    "dsh-session-manager": "^0.4.11",
     "dsh-session-pin": "^0.7.11",
     "dshmarket": "^1.44.0"
   }
