@@ -158,3 +158,11 @@
 {"at":"2026-09-16T16:06:33.446Z","level":"info","event":"update","detail":"dsh-session-manager -> dsh-session-manager@0.4.11 exit=0"}
 {"at":"2026-09-16T16:18:41.141Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
 {"at":"2026-09-16T16:18:41.141Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}
+{"at":"2026-09-16T23:29:41.452Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
+{"at":"2026-09-16T23:29:41.455Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}
+{"at":"2026-09-17T00:04:08.147Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
+{"at":"2026-09-17T00:04:08.148Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}
+{"at":"2026-09-17T01:56:49.267Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
+{"at":"2026-09-17T01:56:49.268Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}
+{"at":"2026-09-17T16:42:21.331Z","level":"info","event":"toggle","detail":"dsh-better-reasoning-effort -> off: fiber=false"}
+{"at":"2026-09-17T16:42:21.341Z","level":"info","event":"uninstall","detail":"dsh-better-reasoning-effort exit=0 live-removed=true"}

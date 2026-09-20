@@ -3,9 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: openrouter
-  model: inclusionai/ling-3.0-flash-fin:free
-  reasoningEffort: high
+  provider: toughc-freetoken
+  model: Qwen3.6-35B-A3B-NVFP4
 llm-pi-ai:
   providers:
     opencode:
@@ -373,6 +372,9 @@ llm-pi-ai:
             low: low
             medium: medium
             high: high
+          input:
+            - text
+            - image
           compat:
             supportsDeveloperRole: false
             supportsReasoningEffort: true
@@ -416,19 +418,20 @@ llm-pi-ai:
           name: DeepSeek V4 Flash 0731 (AMD)
           contextWindow: 1048576
           maxTokens: 393216
+          input:
+            - text
           reasoningEfforts:
             off: none
             low: low
             high: high
             max: max
           compat:
-            thinkingFormat: deepseek
-            supportsReasoningEffort: true
             supportsDeveloperRole: false
-          input:
-            - text
-        - id: DeepSeek-V4-Flash-Vision-Exp (AMD)
-          name: DeepSeek V4 Flash Vision Exp
+            supportsReasoningEffort: true
+            chatTemplateKwargs: {}
+            chatTemplateArgs: {}
+        - id: DeepSeek-V4-Flash-Vision-Exp
+          name: DeepSeek V4 Flash Vision Exp (AMD)
           contextWindow: 1048576
           maxTokens: 393216
           input:
@@ -440,9 +443,24 @@ llm-pi-ai:
             high: high
             max: max
           compat:
-            thinkingFormat: deepseek
-            supportsReasoningEffort: true
             supportsDeveloperRole: false
+            supportsReasoningEffort: true
+            chatTemplateKwargs: {}
+            chatTemplateArgs: {}
+        - id: DeepSeek-V4.1-Flash
+          name: DeepSeek V4.1 Flash (AMD)
+          contextWindow: 1048576
+          maxTokens: 393216
+          reasoningEfforts:
+            off: none
+            low: low
+            high: high
+            max: max
+          compat:
+            supportsDeveloperRole: false
+            supportsReasoningEffort: true
+            chatTemplateKwargs: {}
+            chatTemplateArgs: {}
       retryPolicy:
         mode: normal
         maxRetries: 1000
@@ -796,7 +814,76 @@ llm-pi-ai:
           initialDelayMs: 500
           maxDelayMs: 5000
           jitterRatio: 0.1
-
+    toughc-lmstudio:
+      apiKeyEnv: TOUGHC_LMSTUDIO_API_KEY
+      api: openai-completions
+      baseURL: http://c.tough:1234/v1
+      models:
+        - reasoningEffortsAutofilled: 1
+          id: text-embedding-nomic-embed-text-v1.5
+          name: text-embedding-nomic-embed-text-v1.5
+          input: []
+          reasoningEfforts:
+            off: null
+            low: low
+            medium: medium
+            high: high
+          compat:
+            supportsDeveloperRole: false
+            supportsReasoningEffort: true
+            thinkingFormat: openai
+            chatTemplateKwargs: {}
+            chatTemplateArgs: {}
+        - reasoningEffortsAutofilled: 3
+          id: qwen3.5-9b
+          name: qwen3.5-9b
+          contextWindow: 200000
+          input: []
+          reasoningEfforts:
+            off: null
+            low: low
+            medium: medium
+            high: high
+          compat:
+            supportsDeveloperRole: false
+            supportsReasoningEffort: true
+            thinkingFormat: openai
+            chatTemplateKwargs: {}
+            chatTemplateArgs: {}
+        - id: ornith-1.5-9b
+          name: ornith-1.5-9b
+          contextWindow: 200000
+          input:
+            - text
+            - image
+          reasoningEfforts:
+            off: null
+            medium: medium
+          compat:
+            supportsDeveloperRole: false
+            supportsReasoningEffort: true
+            thinkingFormat: openai
+            chatTemplateKwargs: {}
+            chatTemplateArgs: {}
+        - reasoningEffortsAutofilled: 1
+          id: spark-x2.5-4b
+          name: spark-x2.5-4b
+          contextWindow: 256000
+          input: []
+          reasoningEfforts:
+            off: null
+            low: low
+            medium: medium
+            high: high
+          compat:
+            supportsDeveloperRole: false
+            supportsReasoningEffort: true
+            thinkingFormat: openai
+            chatTemplateKwargs: {}
+            chatTemplateArgs: {}
+        - id: /mnt/nvme0n1p1/models/Nanbeige4.2-3B-Q4_K_M/Nanbeige4.2-3B-Q4_K_M.gguf
+          name: /mnt/nvme0n1p1/models/Nanbeige4.2-3B-Q4_K_M/Nanbeige4.2-3B-Q4_K_M.gguf
+          contextWindow: 160000
 ui-conversation:
   busyEnter: queue
 web-search-deepseek:
@@ -811,10 +898,10 @@ subagent-model-selection:
       model: nvidia/nemotron-3.5-lightning-30b-a3b
     - provider: freellmapi
       model: auto:stable
+    - provider: openrouter
+      model: inclusionai/ling-3.0-flash-fin:free
     - provider: amd-tokenfactory
       model: DeepSeek-V4-Flash
-    - provider: amd-tokenfactory
-      model: DeepSeek-V4-Flash-Vision-Exp (AMD)
 ui-theme:
   fontSize: 16
 ui-chat:
