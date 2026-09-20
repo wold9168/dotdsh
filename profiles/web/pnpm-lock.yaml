@@ -9,29 +9,29 @@ importers:
   .:
     dependencies:
       '@hyzyn/dsh-codegraph':
-        specifier: ^0.3.0
-        version: 0.3.0
+        specifier: ^0.4.2
+        version: 0.4.2
       '@linxin666/dsh-client-ui-git-graph':
-        specifier: ^0.3.23
-        version: 0.3.23
+        specifier: ^0.3.24
+        version: 0.3.24
       '@linxin666/dsh-client-ui-skill-explorer':
-        specifier: ^0.3.23
-        version: 0.3.23
+        specifier: ^0.3.24
+        version: 0.3.24
       '@nanmicoder/dsh-agent-teams':
-        specifier: ^0.1.18
-        version: 0.1.18(@deepseek-ai/schemastery@3.18.2)
+        specifier: ^0.1.20
+        version: 0.1.20(@deepseek-ai/schemastery@3.18.2)
       '@tt-a1i/archify-dsh':
         specifier: ^0.1.0
         version: 0.1.0
       dsh-context:
-        specifier: ^0.53.0
-        version: 0.53.0(@deepseek-ai/schemastery@3.18.2)
+        specifier: ^0.54.0
+        version: 0.54.0(@deepseek-ai/schemastery@3.18.2)
       dsh-free-search:
-        specifier: ^0.4.28
-        version: 0.4.28
+        specifier: ^0.4.32
+        version: 0.4.32
       dsh-session-manager:
-        specifier: ^0.4.11
-        version: 0.4.11
+        specifier: ^0.5.1
+        version: 0.5.1
       dsh-session-pin:
         specifier: ^0.7.11
         version: 0.7.11(@deepseek-ai/schemastery@3.18.2)
@@ -47,29 +47,29 @@ packages:
   '@deepseek-ai/schemastery@3.18.2':
     resolution: {integrity: sha512-njDtZsznjYxok7KLLlHOPyuv2efdWVbSflAHgztSfbMsg+CVraEoRe2DjOCgClYv3ZCSm7WXoaUkbB/+RY7tWQ==}
 
-  '@hyzyn/dsh-codegraph@0.3.0':
-    resolution: {integrity: sha512-LOMvXhUOnQiHiKvPrEbR51NvJ3Sx0SRtumjW6mQtViV77zYAlbPb9WkihCvN9QDGlbSWbECVwc3LEOqyKTDMjQ==}
+  '@hyzyn/dsh-codegraph@0.4.2':
+    resolution: {integrity: sha512-G1hmqefHUAs/BHg71pxiuFPE9HOsVaDfygPvdpzQ2T1f9OHE9ts3ODstpP48Tjib0hAborb5c0YPSYNvS54qzw==}
     engines: {node: '>=22.19.0'}
     peerDependencies:
       react: ^18.2.0
 
-  '@hyzyn/dsh-kit@0.3.0':
-    resolution: {integrity: sha512-sQoZtOHgy7p6qQ1fELLlYsNpV935syTIgj3WmudGaA2+t5F20LLWXoe9QXlHeYy8I9fFrweRruljc+4ILvuLSA==}
+  '@hyzyn/dsh-kit@0.4.1':
+    resolution: {integrity: sha512-RfH7cL80e9PhPhuN9DFpJye3Fxc1dOFi3fvosJmq+767LmNvquYDs6g8SzKAt6PzlAHYDs3g/upA5YL6lXcc0g==}
     engines: {node: '>=22.19.0'}
 
-  '@linxin666/dsh-client-ui-git-graph@0.3.23':
-    resolution: {integrity: sha512-Ah9+Kzpi6WBCxwv6oaNd6MT4NjxNohGQ3qjH12NiGqOwIud0NuCBE9fxJOJL2X4ALAz9Z/lbDDMZ/hYuok+n4w==}
+  '@linxin666/dsh-client-ui-git-graph@0.3.24':
+    resolution: {integrity: sha512-I0ZiVnLNGG76XoXShcY1bQrSh00HsWzSIxl9lt9svv/CnqdGVoWSF0yw2251diIjg9GqekhE68/KAonx0WfbFg==}
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       react: ^18.2.0
 
-  '@linxin666/dsh-client-ui-skill-explorer@0.3.23':
-    resolution: {integrity: sha512-jaa8hw0WZGeydawDRpwyQrKXRjpYOgoq6Q2GL2/LbgG1NRo/9eYS3tlqg8WXpJW37Ro2fkEY9YnkQowPoOlAhw==}
+  '@linxin666/dsh-client-ui-skill-explorer@0.3.24':
+    resolution: {integrity: sha512-zJiS834wKqCmwwO1/e5jmErgC4dsPKXLlrKi8knnvqVhjsJhqVEl+jchvE7o9D9/p1F5KKHFk341fC5UmE0GcA==}
     peerDependencies:
       react: ^18.2.0
 
-  '@nanmicoder/dsh-agent-teams@0.1.18':
-    resolution: {integrity: sha512-K0D1OWZB0/EKk153mndPsoh2Gbx9u1TAIj7DUBRnuJyOZ+ycZMRXqoDhore0qcnqd9qU3fKbxWOOGnxVrJKFsQ==}
+  '@nanmicoder/dsh-agent-teams@0.1.20':
+    resolution: {integrity: sha512-pKWXp9l39I21TWt1GkrWnQmPLwnj8t+1BCI86uSZfKjk5/CxqcdgF5zC1yxB/Dyw991ngone3aVQ0eysZ4BWlA==}
     engines: {node: ^22.19.0 || >=24}
     hasBin: true
     peerDependencies:
@@ -160,8 +160,8 @@ packages:
   cosmokit@1.8.1:
     resolution: {integrity: sha512-PDBv4l90xZKrUsZ0vtoycgZpO/j4iFsqJXrAxsyBDsnQRI7ZMJXIjgDJsKNjd5L8jnVnnlrDCdhkFbTncgCVjQ==}
 
-  dsh-context@0.53.0:
-    resolution: {integrity: sha512-AwwRPCgWYi38sNL0i7Y3GKldMI2AyqThyqPW8C8irwMZDpyUhdj3z0mqWKkCWWEBWvBctFbLakXHCduxp4GR2w==}
+  dsh-context@0.54.0:
+    resolution: {integrity: sha512-F4tNyT6WqPrQtKkLE6n4iQovAZzmIC4+4B7KFF0SrgY9vhZR+jZ9aLo46y7Sp45Vtpg63NUXJHqYS5gTuck44g==}
     engines: {node: ^22.19.0 || >=24.0.0}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.2
@@ -176,15 +176,16 @@ packages:
       react:
         optional: true
 
-  dsh-free-search@0.4.28:
-    resolution: {integrity: sha512-USN/rV/Yf1LjrHWFMn8RT6MBuugu5sYCjbG+MKgg6jd4FCqDmi47V4SnD+8fjJ43XZHXc0D5b+QejL2hj3WhWQ==}
+  dsh-free-search@0.4.32:
+    resolution: {integrity: sha512-QZEEHk/WE+6JYkS2pWDGWEOvqKGI6DjGTXqxR7F0UV2Ah0BnKqnfZvKJHg2uvEZGyL9od3Ia0+B1tRJ1wTuUZw==}
     engines: {node: '>=20'}
     peerDependencies:
       '@deepseek-ai/dsh-settings': ^0.1.0-rc.7 || ^0.1.1-rc.2 || ^0.1.2-alpha.2 || ^0.1.3-alpha.2 || ^0.1.5-alpha.1
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.7 || ^0.1.1-rc.2 || ^0.1.2-alpha.2 || ^0.1.3-alpha.2 || ^0.1.5-alpha.1
 
-  dsh-session-manager@0.4.11:
-    resolution: {integrity: sha512-a4I5mZNjvxbKLo9gDQddLDmI/GcdhYZiRr55B3mbt9xi2mJqCTY9758LoJdLGkBiuq5oYk6x/eCJNXXQVBEOTw==}
+  dsh-session-manager@0.5.1:
+    resolution: {integrity: sha512-j9nxHiCzjhzKVGCeHpu+2U2a5mZbTPuL+epWoQep1zHUTY4df81v10lSp1daqkjIWuLz0va+u5e5Nibo3Xul+Q==}
+    engines: {node: ^22.15.0 || >=24.0.0}
     peerDependencies:
       cordis: '>=4.0.0-rc <5'
 
@@ -248,23 +249,23 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.8.3
       '@standard-schema/spec': 1.1.0
 
-  '@hyzyn/dsh-codegraph@0.3.0':
+  '@hyzyn/dsh-codegraph@0.4.2':
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
-      '@hyzyn/dsh-kit': 0.3.0
+      '@hyzyn/dsh-kit': 0.4.1
       js-yaml: 4.3.2
 
-  '@hyzyn/dsh-kit@0.3.0':
+  '@hyzyn/dsh-kit@0.4.1':
     dependencies:
       js-yaml: 4.3.2
 
-  '@linxin666/dsh-client-ui-git-graph@0.3.23':
+  '@linxin666/dsh-client-ui-git-graph@0.3.24':
     dependencies:
       schemastery: 3.18.0
 
-  '@linxin666/dsh-client-ui-skill-explorer@0.3.23': {}
+  '@linxin666/dsh-client-ui-skill-explorer@0.3.24': {}
 
-  '@nanmicoder/dsh-agent-teams@0.1.18(@deepseek-ai/schemastery@3.18.2)':
+  '@nanmicoder/dsh-agent-teams@0.1.20(@deepseek-ai/schemastery@3.18.2)':
     optionalDependencies:
       '@deepseek-ai/schemastery': 3.18.2
 
@@ -276,16 +277,16 @@ snapshots:
 
   cosmokit@1.8.1: {}
 
-  dsh-context@0.53.0(@deepseek-ai/schemastery@3.18.2):
+  dsh-context@0.54.0(@deepseek-ai/schemastery@3.18.2):
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
       zod: 4.6.1
 
-  dsh-free-search@0.4.28:
+  dsh-free-search@0.4.32:
     dependencies:
       '@deepseek-ai/schemastery': 3.18.2
 
-  dsh-session-manager@0.4.11: {}
+  dsh-session-manager@0.5.1: {}
 
   dsh-session-pin@0.7.11(@deepseek-ai/schemastery@3.18.2):
     dependencies:

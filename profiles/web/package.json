@@ -21,14 +21,14 @@
     }
   },
   "dependencies": {
-    "@hyzyn/dsh-codegraph": "^0.3.0",
-    "@linxin666/dsh-client-ui-git-graph": "^0.3.23",
-    "@linxin666/dsh-client-ui-skill-explorer": "^0.3.23",
-    "@nanmicoder/dsh-agent-teams": "^0.1.18",
+    "@hyzyn/dsh-codegraph": "^0.4.2",
+    "@linxin666/dsh-client-ui-git-graph": "^0.3.24",
+    "@linxin666/dsh-client-ui-skill-explorer": "^0.3.24",
+    "@nanmicoder/dsh-agent-teams": "^0.1.20",
     "@tt-a1i/archify-dsh": "^0.1.0",
-    "dsh-context": "^0.53.0",
-    "dsh-free-search": "^0.4.28",
-    "dsh-session-manager": "^0.4.11",
+    "dsh-context": "^0.54.0",
+    "dsh-free-search": "^0.4.32",
+    "dsh-session-manager": "^0.5.1",
     "dsh-session-pin": "^0.7.11",
     "dshmarket": "^1.44.0"
   }

@@ -166,3 +166,12 @@
 {"at":"2026-09-17T01:56:49.268Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}
 {"at":"2026-09-17T16:42:21.331Z","level":"info","event":"toggle","detail":"dsh-better-reasoning-effort -> off: fiber=false"}
 {"at":"2026-09-17T16:42:21.341Z","level":"info","event":"uninstall","detail":"dsh-better-reasoning-effort exit=0 live-removed=true"}
+{"at":"2026-09-20T22:05:03.076Z","level":"info","event":"update","detail":"@hyzyn/dsh-codegraph -> @hyzyn/dsh-codegraph@0.4.2 exit=0"}
+{"at":"2026-09-20T22:05:08.477Z","level":"info","event":"update","detail":"@linxin666/dsh-client-ui-git-graph -> @linxin666/dsh-client-ui-git-graph@0.3.24 exit=0"}
+{"at":"2026-09-20T22:05:11.194Z","level":"info","event":"update","detail":"@linxin666/dsh-client-ui-skill-explorer -> @linxin666/dsh-client-ui-skill-explorer@0.3.24 exit=0"}
+{"at":"2026-09-20T22:05:14.450Z","level":"info","event":"update","detail":"@nanmicoder/dsh-agent-teams -> @nanmicoder/dsh-agent-teams@0.1.20 exit=0"}
+{"at":"2026-09-20T22:05:17.202Z","level":"info","event":"update","detail":"dsh-context -> dsh-context@0.54.0 exit=0"}
+{"at":"2026-09-20T22:05:20.341Z","level":"info","event":"update","detail":"dsh-free-search -> dsh-free-search@0.4.32 exit=0"}
+{"at":"2026-09-20T22:05:22.801Z","level":"info","event":"update","detail":"dsh-session-manager -> dsh-session-manager@0.5.1 exit=0"}
+{"at":"2026-09-20T22:11:18.317Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
+{"at":"2026-09-20T22:11:18.317Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}
