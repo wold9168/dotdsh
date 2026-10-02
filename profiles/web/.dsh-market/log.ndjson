@@ -175,3 +175,44 @@
 {"at":"2026-09-20T22:05:22.801Z","level":"info","event":"update","detail":"dsh-session-manager -> dsh-session-manager@0.5.1 exit=0"}
 {"at":"2026-09-20T22:11:18.317Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
 {"at":"2026-09-20T22:11:18.317Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}
+{"at":"2026-09-21T18:04:27.417Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
+{"at":"2026-09-21T18:04:27.418Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}
+{"at":"2026-09-22T02:08:46.777Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
+{"at":"2026-09-22T02:08:46.780Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}
+{"at":"2026-09-26T00:45:44.046Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
+{"at":"2026-09-26T00:45:44.046Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}
+{"at":"2026-09-26T00:55:10.675Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
+{"at":"2026-09-26T00:55:10.675Z","level":"info","event":"boot","detail":"plugin kept off: dsh-session-pin"}
+{"at":"2026-09-26T00:55:24.179Z","level":"warn","event":"update-compat","detail":"@hyzyn/dsh-codegraph@0.5.2 declares ^0.1.7-rc.1; this host is 0.1.5-rc.2 — refused before installing"}
+{"at":"2026-09-26T00:55:24.441Z","level":"warn","event":"update-compat","detail":"@linxin666/dsh-client-ui-git-graph@0.4.2 declares >=0.1.7-rc.2; this host is 0.1.5-rc.2 — refused before installing"}
+{"at":"2026-09-26T00:55:24.599Z","level":"warn","event":"update-compat","detail":"@linxin666/dsh-client-ui-skill-explorer@0.4.2 declares >=0.1.7-rc.2; this host is 0.1.5-rc.2 — refused before installing"}
+{"at":"2026-09-26T00:55:26.800Z","level":"info","event":"update","detail":"@nanmicoder/dsh-agent-teams -> @nanmicoder/dsh-agent-teams@0.1.21 exit=0"}
+{"at":"2026-09-26T00:55:29.731Z","level":"info","event":"update","detail":"dsh-context -> dsh-context@0.56.2 exit=0"}
+{"at":"2026-09-26T00:55:30.752Z","level":"warn","event":"update-compat","detail":"dsh-free-search@0.4.39 declares ^0.1.7-rc.1; this host is 0.1.5-rc.2 — refused before installing"}
+{"at":"2026-09-26T00:55:32.548Z","level":"info","event":"update","detail":"dsh-session-manager -> dsh-session-manager@0.5.2 exit=0"}
+{"at":"2026-09-26T00:55:35.014Z","level":"warn","event":"update-compat","detail":"dsh-session-pin: introduced host-compatibility risks — @deepseek-ai/cordis@^4.0.3 vs 4.0.2; @deepseek-ai/schemastery@^3.18.3 vs 3.18.2"}
+{"at":"2026-09-26T00:55:35.014Z","level":"info","event":"update","detail":"dsh-session-pin -> dsh-session-pin@0.7.16 exit=0"}
+{"at":"2026-09-26T00:56:02.973Z","level":"info","event":"toggle","detail":"dsh-session-pin -> off: fiber=false"}
+{"at":"2026-09-26T00:56:02.974Z","level":"info","event":"patch","detail":"removed patch rows for session-pin"}
+{"at":"2026-09-26T00:56:02.974Z","level":"info","event":"uninstall","detail":"dsh-session-pin exit=0 live-removed=true"}
+{"at":"2026-10-02T22:05:34.095Z","level":"info","event":"update","detail":"@hyzyn/dsh-codegraph -> @hyzyn/dsh-codegraph@0.6.3 exit=0"}
+{"at":"2026-10-02T22:05:38.504Z","level":"info","event":"update","detail":"@linxin666/dsh-client-ui-git-graph -> @linxin666/dsh-client-ui-git-graph@0.4.4 exit=0"}
+{"at":"2026-10-02T22:05:40.825Z","level":"info","event":"update","detail":"@linxin666/dsh-client-ui-skill-explorer -> @linxin666/dsh-client-ui-skill-explorer@0.4.4 exit=0"}
+{"at":"2026-10-02T22:05:45.267Z","level":"info","event":"update","detail":"@nanmicoder/dsh-agent-teams -> @nanmicoder/dsh-agent-teams@0.1.22 exit=0"}
+{"at":"2026-10-02T22:05:52.493Z","level":"info","event":"update","detail":"dsh-context -> dsh-context@0.62.2 exit=0"}
+{"at":"2026-10-02T22:05:56.613Z","level":"info","event":"update","detail":"dsh-free-search -> dsh-free-search@0.6.6 exit=0"}
+{"at":"2026-10-02T22:06:01.351Z","level":"info","event":"update","detail":"dsh-session-manager -> dsh-session-manager@0.6.2 exit=0"}
+{"at":"2026-10-02T22:12:05.648Z","level":"warn","event":"toggle","detail":"@nanmicoder/dsh-agent-teams: entry update failed — @nanmicoder/dsh-agent-teams: loader update: previous operation is still pending"}
+{"at":"2026-10-02T22:12:05.648Z","level":"info","event":"toggle","detail":"@nanmicoder/dsh-agent-teams -> off: fiber=true"}
+{"at":"2026-10-02T22:12:05.648Z","level":"info","event":"toggle","detail":"@nanmicoder/dsh-agent-teams: no loader entry matched"}
+{"at":"2026-10-02T22:12:05.648Z","level":"warn","event":"toggle","detail":"@nanmicoder/dsh-agent-teams: entry update failed — @nanmicoder/dsh-agent-teams: loader update: previous operation is still pending"}
+{"at":"2026-10-02T22:12:05.648Z","level":"info","event":"toggle","detail":"@nanmicoder/dsh-agent-teams -> off: fiber=true"}
+{"at":"2026-10-02T22:12:05.648Z","level":"info","event":"toggle","detail":"@nanmicoder/dsh-agent-teams: no loader entry matched"}
+{"at":"2026-10-02T22:12:06.270Z","level":"info","event":"toggle","detail":"@nanmicoder/dsh-agent-teams -> off: fiber=true"}
+{"at":"2026-10-02T22:12:06.272Z","level":"info","event":"toggle","detail":"@nanmicoder/dsh-agent-teams: dsh.profile.bundles removed so the official page's package switch agrees (#696)"}
+{"at":"2026-10-02T22:12:06.277Z","level":"info","event":"patch","detail":"disabled row agent-teams in ~/.dsh/profiles/web/cordis.patch.yml"}
+{"at":"2026-10-02T22:12:06.277Z","level":"info","event":"toggle","detail":"@nanmicoder/dsh-agent-teams: patch layer disabled rows agent-teams"}
+{"at":"2026-10-02T22:12:06.277Z","level":"info","event":"toggle","detail":"@nanmicoder/dsh-agent-teams: off ok=true"}
+{"at":"2026-10-02T22:14:04.916Z","level":"warn","event":"uninstall-blocked","detail":"@nanmicoder/dsh-agent-teams: refused while agents are running — session-aaa5d442-575f-4efd-a14b-3430650c5d79, a310e1bb-ea27-420c-9546-daabf5471641"}
+{"at":"2026-10-02T22:14:24.750Z","level":"info","event":"toggle","detail":"@nanmicoder/dsh-agent-teams: no loader entry matched"}
+{"at":"2026-10-02T22:14:24.751Z","level":"info","event":"uninstall","detail":"@nanmicoder/dsh-agent-teams exit=0 live-removed=false"}

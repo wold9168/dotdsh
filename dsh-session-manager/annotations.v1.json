@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "sessions": {
+    "session-09379e76-c16f-44b6-bfeb-fad1aabecff7": {
+      "favorite": false,
+      "reviewLater": false,
+      "tags": [],
+      "note": "",
+      "priority": null,
+      "revision": 4,
+      "updatedAt": 1790039719268
+    },
+    "session-0e16ab8c-96f2-4733-99d4-2ff9b0613616": {
+      "favorite": false,
+      "reviewLater": false,
+      "tags": [],
+      "note": "",
+      "priority": null,
+      "revision": 2,
+      "updatedAt": 1790039725695
+    }
+  }
+}

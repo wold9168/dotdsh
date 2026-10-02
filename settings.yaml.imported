@@ -3,8 +3,8 @@ ui-onboarding:
 locale:
   preference: zh
 agent-default-model:
-  provider: toughc-freetoken
-  model: Qwen3.6-35B-A3B-NVFP4
+  provider: openrouter
+  model: inclusionai/ling-3.0-flash-fin:free
 llm-pi-ai:
   providers:
     opencode:
@@ -896,8 +896,6 @@ subagent-model-selection:
       model: nvidia/nemotron-3-ultra-550b-a55b
     - provider: nvidia
       model: nvidia/nemotron-3.5-lightning-30b-a3b
-    - provider: freellmapi
-      model: auto:stable
     - provider: openrouter
       model: inclusionai/ling-3.0-flash-fin:free
     - provider: amd-tokenfactory
