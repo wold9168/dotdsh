@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@hyzyn/dsh-codegraph':
-        specifier: ^0.6.3
-        version: 0.6.3
       '@linxin666/dsh-client-ui-git-graph':
         specifier: ^0.4.4
         version: 0.4.4
@@ -40,23 +37,6 @@ packages:
 
   '@deepseek-ai/schemastery@3.18.4':
     resolution: {integrity: sha512-SSXO6tYuyrIqKVbmOnIq0s+riUywYzouFMcnBluHF9n4KMo2G8HvEzhCYj6pj2617/glOjbJuVInJ9hfONsjkg==}
-
-  '@hyzyn/dsh-codegraph@0.6.3':
-    resolution: {integrity: sha512-0sermAh7aRRykrm36s3aqSgPd+xoozrTyuoh2e27ObHjnk/cxvLsL6CyiTj8DLW9rIpkBkEUdSCK+48LWZ4epA==}
-    engines: {node: '>=22.19.0'}
-    peerDependencies:
-      '@deepseek-ai/dsh': ^0.1.7-rc.2 || ^0.2.0-rc.1 || ^0.2.0-rc.2
-      '@deepseek-ai/dsh-mcp-client': ^0.1.7-rc.2 || ^0.2.0-rc.1 || ^0.2.0-rc.2
-      react: ^18.2.0
-    peerDependenciesMeta:
-      '@deepseek-ai/dsh':
-        optional: true
-      '@deepseek-ai/dsh-mcp-client':
-        optional: true
-
-  '@hyzyn/dsh-kit@0.5.1':
-    resolution: {integrity: sha512-JvoLy3zMPNn1gzqJBjHeXEwPV6Ng2mkdb++EJW/aMWsx6bPYVHev+C4KcxmL25nmbBmyGeNDhE4pO3HQ6lo4LA==}
-    engines: {node: '>=22.19.0'}
 
   '@linxin666/dsh-client-ui-git-graph@0.4.4':
     resolution: {integrity: sha512-S1x3SOMNhYxk7DoeHs6QPtFfrjREtD/kKe0FNvlnn6RBb7TZBRlIId6f3HBMZSqnoosLnDO15kvj1hYu9uj8EA==}
@@ -164,16 +144,6 @@ snapshots:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.5
       '@standard-schema/spec': 1.1.0
-
-  '@hyzyn/dsh-codegraph@0.6.3':
-    dependencies:
-      '@deepseek-ai/schemastery': 3.18.4
-      '@hyzyn/dsh-kit': 0.5.1
-      js-yaml: 4.3.2
-
-  '@hyzyn/dsh-kit@0.5.1':
-    dependencies:
-      js-yaml: 4.3.2
 
   '@linxin666/dsh-client-ui-git-graph@0.4.4':
     dependencies:

@@ -216,3 +216,5 @@
 {"at":"2026-10-02T22:14:04.916Z","level":"warn","event":"uninstall-blocked","detail":"@nanmicoder/dsh-agent-teams: refused while agents are running — session-aaa5d442-575f-4efd-a14b-3430650c5d79, a310e1bb-ea27-420c-9546-daabf5471641"}
 {"at":"2026-10-02T22:14:24.750Z","level":"info","event":"toggle","detail":"@nanmicoder/dsh-agent-teams: no loader entry matched"}
 {"at":"2026-10-02T22:14:24.751Z","level":"info","event":"uninstall","detail":"@nanmicoder/dsh-agent-teams exit=0 live-removed=false"}
+{"at":"2026-10-02T22:17:54.904Z","level":"info","event":"toggle","detail":"@hyzyn/dsh-codegraph -> off: fiber=true"}
+{"at":"2026-10-02T22:17:54.905Z","level":"info","event":"uninstall","detail":"@hyzyn/dsh-codegraph exit=0 live-removed=true"}
