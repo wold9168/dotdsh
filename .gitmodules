@@ -16,3 +16,6 @@
 [submodule "skillrepo/diagram-design"]
 	path = skillrepo/diagram-design
 	url = https://github.com/cathrynlavery/diagram-design.git
+[submodule "skillrepo/english-word-explainer.skill"]
+	path = skillrepo/english-word-explainer.skill
+	url = https://github.com/wold9168/english-word-explainer.skill
