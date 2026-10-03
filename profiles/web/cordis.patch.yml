@@ -13,55 +13,11 @@
   name: "@deepseek-ai/dsh-agent-default-model"
   config:
     provider: nvidia
-    model: deepseek-ai/deepseek-v4.1-flash
+    model: z-ai/glm-5.3-flash
 - id: llm-pi-ai
   name: "@deepseek-ai/dsh-llm-pi-ai"
   config:
     providers:
-      opencode:
-        apiKeyEnv: OPENCODE_API_KEY
-        api: openai-completions
-        baseURL: https://opencode.ai/zen/v1
-        models:
-          - id: mimo-v2.5-free
-            name: MiMo V2.5 Free (opencode)
-            contextWindow: 200000
-            maxTokens: 32000
-            reasoningEfforts:
-              off: null
-              low: low
-              medium: medium
-              high: high
-            compat:
-              thinkingFormat: openai
-              supportsReasoningEffort: true
-          - id: nemotron-3-ultra-free
-            name: Nemotron 3 Ultra Free (opencode)
-            contextWindow: 1000000
-            maxTokens: 128000
-            reasoningEfforts:
-              off: null
-              low: low
-              medium: medium
-              high: high
-            compat:
-              thinkingFormat: openai
-              supportsReasoningEffort: true
-        retryPolicy:
-          mode: normal
-          maxRetries: 1000
-          retryableCodes:
-            - RATE_LIMIT
-            - SERVER
-            - TRANSPORT
-            - INVALID_REQUEST
-            - PI_AI_ERROR
-            - EMPTY_RESPONSE
-            - TIMEOUT
-          backoff:
-            initialDelayMs: 500
-            maxDelayMs: 5000
-            jitterRatio: 0.1
       nvidia:
         apiKeyEnv: NVIDIA_API_KEY
         api: openai-completions
@@ -73,6 +29,7 @@
             maxTokens: 393216
             input:
               - text
+              - image
             reasoningEfforts:
               off: none
               low: low
@@ -81,6 +38,18 @@
             compat:
               supportsReasoningEffort: true
               thinkingFormat: deepseek
+          - id: z-ai/glm-5.3-flash
+            name: GLM 5.3 Flash (nvidia)
+            contextWindow: 1048576
+            maxTokens: 393216
+            reasoningEfforts:
+              off: null
+              low: low
+              medium: medium
+              high: high
+            compat:
+              supportsReasoningEffort: true
+              thinkingFormat: openai
           - id: google/gemma-4-31b-it
             name: Gemma 4 31B (nvidia)
             contextWindow: 262144
@@ -853,6 +822,11 @@
 - id: ui-chat
   name: "@deepseek-ai/dsh-client-ui-chat"
   config:
-    transcriptView: compact
+    transcriptView: detailed
 - id: agent-teams
   disabled: true
+- id: agent-preset-registry
+  name: "@deepseek-ai/dsh-agent-preset-registry"
+  config:
+    default: standard
+    selectedDefault: ptc
