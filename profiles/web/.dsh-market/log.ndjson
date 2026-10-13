@@ -218,3 +218,7 @@
 {"at":"2026-10-02T22:14:24.751Z","level":"info","event":"uninstall","detail":"@nanmicoder/dsh-agent-teams exit=0 live-removed=false"}
 {"at":"2026-10-02T22:17:54.904Z","level":"info","event":"toggle","detail":"@hyzyn/dsh-codegraph -> off: fiber=true"}
 {"at":"2026-10-02T22:17:54.905Z","level":"info","event":"uninstall","detail":"@hyzyn/dsh-codegraph exit=0 live-removed=true"}
+{"at":"2026-10-13T08:42:26.620Z","level":"info","event":"toggle","detail":"@linxin666/dsh-client-ui-git-graph -> off: fiber=true"}
+{"at":"2026-10-13T08:42:26.630Z","level":"info","event":"uninstall","detail":"@linxin666/dsh-client-ui-git-graph exit=0 live-removed=true"}
+{"at":"2026-10-13T08:42:30.687Z","level":"info","event":"toggle","detail":"@linxin666/dsh-client-ui-skill-explorer -> off: fiber=true"}
+{"at":"2026-10-13T08:42:30.687Z","level":"info","event":"uninstall","detail":"@linxin666/dsh-client-ui-skill-explorer exit=0 live-removed=true"}

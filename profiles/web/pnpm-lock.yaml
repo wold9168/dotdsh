@@ -8,12 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@linxin666/dsh-client-ui-git-graph':
-        specifier: ^0.4.4
-        version: 0.4.4
-      '@linxin666/dsh-client-ui-skill-explorer':
-        specifier: ^0.4.4
-        version: 0.4.4
       '@tt-a1i/archify-dsh':
         specifier: ^0.1.0
         version: 0.1.0
@@ -37,19 +31,6 @@ packages:
 
   '@deepseek-ai/schemastery@3.18.4':
     resolution: {integrity: sha512-SSXO6tYuyrIqKVbmOnIq0s+riUywYzouFMcnBluHF9n4KMo2G8HvEzhCYj6pj2617/glOjbJuVInJ9hfONsjkg==}
-
-  '@linxin666/dsh-client-ui-git-graph@0.4.4':
-    resolution: {integrity: sha512-S1x3SOMNhYxk7DoeHs6QPtFfrjREtD/kKe0FNvlnn6RBb7TZBRlIId6f3HBMZSqnoosLnDO15kvj1hYu9uj8EA==}
-    engines: {node: ^22.19.0 || >=24.0.0}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.0-rc.1'
-      react: ^18.2.0
-
-  '@linxin666/dsh-client-ui-skill-explorer@0.4.4':
-    resolution: {integrity: sha512-qHOPrsJqKZkybZ8cCQAE9yeJJZwSkZcSSMPqkAsgtupLeZyIV96C768oy2NZkOc4N3Ksfmy3fZkYz0aYmx+UNw==}
-    peerDependencies:
-      '@deepseek-ai/dsh': '>=0.2.0-rc.1'
-      react: ^18.2.0
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -144,12 +125,6 @@ snapshots:
     dependencies:
       '@deepseek-ai/cosmokit': 1.8.5
       '@standard-schema/spec': 1.1.0
-
-  '@linxin666/dsh-client-ui-git-graph@0.4.4':
-    dependencies:
-      '@deepseek-ai/schemastery': 3.18.4
-
-  '@linxin666/dsh-client-ui-skill-explorer@0.4.4': {}
 
   '@standard-schema/spec@1.1.0': {}
 
