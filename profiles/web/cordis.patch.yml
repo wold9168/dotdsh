@@ -12,8 +12,9 @@
 - id: agent-default-model
   name: "@deepseek-ai/dsh-agent-default-model"
   config:
-    provider: nvidia
-    model: deepseek-ai/deepseek-v4.1-flash
+    provider: ops-newapi
+    model: deepseek-v4.1-flash:free
+    reasoningEffort: max
 - id: llm-pi-ai
   name: "@deepseek-ai/dsh-llm-pi-ai"
   config:
@@ -813,3 +814,8 @@
   config:
     default: standard
     selectedDefault: ptc
+- id: web
+  name: "@deepseek-ai/dsh-web"
+  config:
+    searchProvider: ddg
+    fetchProvider: fs-quality-fetch
