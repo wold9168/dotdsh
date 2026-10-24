@@ -15,7 +15,6 @@
         "@deepseek-ai/dsh-experimental-agent-team-profile",
         "@deepseek-ai/dsh-experimental-inspector-profile",
         "@deepseek-ai/dsh-experimental-tool-worktree",
-        "@deepseek-ai/dsh-experimental-cot-translation-bundle",
         "@deepseek-ai/dsh-experimental-session-search",
         "@deepseek-ai/dsh-experimental-session-titles-bundle",
         "@deepseek-ai/dsh-experimental-ralph-bundle",
@@ -26,8 +25,8 @@
   },
   "dependencies": {
     "@tt-a1i/archify-dsh": "^1.0.0",
-    "dsh-context": "^0.74.0",
-    "dsh-free-search": "^0.9.14",
+    "dsh-context": "^0.75.1",
+    "dsh-free-search": "^0.9.15",
     "dsh-session-manager": "^0.7.5",
     "dshmarket": "^1.69.0"
   }

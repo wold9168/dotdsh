@@ -236,3 +236,13 @@
 {"at":"2026-10-23T16:29:39.526Z","level":"info","event":"update","detail":"dsh-context -> dsh-context@0.74.0 exit=0"}
 {"at":"2026-10-23T16:29:42.671Z","level":"info","event":"update","detail":"dsh-free-search -> dsh-free-search@0.9.14 exit=0"}
 {"at":"2026-10-23T16:29:45.470Z","level":"info","event":"update","detail":"dsh-session-manager -> dsh-session-manager@0.7.5 exit=0"}
+{"at":"2026-10-24T10:59:22.453Z","level":"info","event":"update-start","detail":"dsh-context -> dsh-context@0.75.1 (profile web)"}
+{"at":"2026-10-24T10:59:25.531Z","level":"info","event":"update","detail":"dsh-context -> dsh-context@0.75.1 exit=0"}
+{"at":"2026-10-24T10:59:26.163Z","level":"info","event":"update-start","detail":"dsh-free-search -> dsh-free-search@0.9.15 (profile web)"}
+{"at":"2026-10-24T10:59:29.740Z","level":"info","event":"update","detail":"dsh-free-search -> dsh-free-search@0.9.15 exit=0"}
+{"at":"2026-10-24T17:26:10.981Z","level":"info","event":"install","detail":"dsh-bili-scroll: pinned to the registry's latest, 2.1.0, so pnpm's fresh-release hold cannot substitute an older version silently"}
+{"at":"2026-10-24T17:26:16.214Z","level":"info","event":"install","detail":"dsh-bili-scroll: the host's own replay activated it; adopted instead of mounting a second copy (#814, #827)"}
+{"at":"2026-10-24T17:26:16.236Z","level":"info","event":"install","detail":"dsh-bili-scroll@2.1.0 exit=0 hot=true"}
+{"at":"2026-10-24T17:27:53.405Z","level":"info","event":"uninstall-start","detail":"dsh-bili-scroll (profile web)"}
+{"at":"2026-10-24T17:27:54.725Z","level":"info","event":"toggle","detail":"dsh-bili-scroll -> off: fiber=true"}
+{"at":"2026-10-24T17:27:54.726Z","level":"info","event":"uninstall","detail":"dsh-bili-scroll exit=0 live-removed=true"}
