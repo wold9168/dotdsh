@@ -12,8 +12,9 @@
 - id: agent-default-model
   name: "@deepseek-ai/dsh-agent-default-model"
   config:
-    provider: nvidia
-    model: deepseek-ai/deepseek-v4.1-flash
+    provider: toughc-strata
+    model: gyro-gyro-m
+    reasoningEffort: max
 - id: llm-pi-ai
   name: "@deepseek-ai/dsh-llm-pi-ai"
   config:
@@ -502,6 +503,27 @@
           - id: /mnt/nvme0n1p1/models/Nanbeige4.2-3B-Q4_K_M/Nanbeige4.2-3B-Q4_K_M.gguf
             name: /mnt/nvme0n1p1/models/Nanbeige4.2-3B-Q4_K_M/Nanbeige4.2-3B-Q4_K_M.gguf
             contextWindow: 160000
+          - id: /mnt/nvme0n1p1/models/Ternary-Bonsai-2-27B-PTQ1_0/Ternary-Bonsai-2-27B-PTQ1_0.gguf
+            name: /mnt/nvme0n1p1/models/Ternary-Bonsai-2-27B-PTQ1_0/Ternary-Bonsai-2-27B-PTQ1_0.gguf
+            contextWindow: 204800
+      toughc-strata:
+        api: openai-completions
+        baseURL: http://127.0.0.1:47831/v1
+        models:
+          - id: gyro-gyro-m
+            name: gyro-gyro-m
+            contextWindow: 272144
+            maxTokens: 65536
+            input:
+              - text
+              - image
+            reasoningEfforts:
+              off: null
+              low: low
+              medium: medium
+              high: high
+              max: max
+        apiKeyEnv: TOUGHC_STRATA_API_KEY
 - id: ui-conversation
   name: "@deepseek-ai/dsh-client-ui-conversation"
   config:
