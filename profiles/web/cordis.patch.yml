@@ -12,9 +12,8 @@
 - id: agent-default-model
   name: "@deepseek-ai/dsh-agent-default-model"
   config:
-    provider: toughc-strata
-    model: gyro-gyro-m
-    reasoningEffort: max
+    provider: openrouter
+    model: nvidia/nemotron-3.5-super-vl:free
 - id: llm-pi-ai
   name: "@deepseek-ai/dsh-llm-pi-ai"
   config:
@@ -42,7 +41,6 @@
           - id: z-ai/glm-5.3-flash
             name: GLM 5.3 Flash (nvidia)
             contextWindow: 1048576
-            maxTokens: 393216
             reasoningEfforts:
               off: null
               low: low
@@ -51,6 +49,7 @@
             compat:
               supportsReasoningEffort: true
               thinkingFormat: openai
+            maxTokens: 131072
           - id: minimaxai/minimax-m3.1-flash
             name: Minimax M3.1 Flash (nvidia)
             contextWindow: 262144
@@ -118,8 +117,8 @@
               medium: medium
               high: high
             compat:
-              thinkingFormat: openai
               supportsReasoningEffort: true
+              thinkingFormat: openai
           - id: nvidia/nemotron-3-ultra-550b-a55b:free
             name: "NVIDIA: Nemotron 3 Ultra (openrouter)"
             contextWindow: 1048576
@@ -130,32 +129,37 @@
               medium: medium
               high: high
             compat:
-              thinkingFormat: openai
               supportsReasoningEffort: true
-          - id: inclusionai/ling-3.0-flash-fin:free
-            name: "inclusionAI: Ling 3.0 Flash Fin (openrouter)"
-            contextWindow: 262144
+              thinkingFormat: openai
+          - reasoningEffortsAutofilled: 2
+            id: inclusionai/ling-3.2-flash:free
+            name: "inclusionAI: Ling 3.2 Flash Fin (openrouter)"
+            contextWindow: 1048576
+            input:
+              - text
+              - image
             reasoningEfforts:
               off: null
               low: low
               medium: medium
               high: high
-            reasoningEffortsAutofilled: 2
             compat:
-              thinkingFormat: openai
               supportsReasoningEffort: true
-          - id: thinkingmachines/inkling:free
-            name: Inkling (openrouter)
-            contextWindow: 262144
+              thinkingFormat: openai
+          - reasoningEffortsAutofilled: 4
+            id: baidu/ernie-5.5-flash-preview:free
+            name: "Baidu: ERNIE-5.5-Flash-Preview (openrouter)"
+            contextWindow: 1048576
             reasoningEfforts:
               off: null
               low: low
               medium: medium
               high: high
-            reasoningEffortsAutofilled: 4
             compat:
-              thinkingFormat: openai
               supportsReasoningEffort: true
+              thinkingFormat: openai
+          - id: nvidia/nemotron-3.5-super-vl:free
+            name: "NVIDIA: Nemotron 3.5 Super VL (openrouter)"
         retryPolicy:
           mode: normal
           maxRetries: 1000
@@ -269,41 +273,8 @@
         api: openai-completions
         baseURL: https://developer.amd.com.cn/radeon/api/v1
         models:
-          - id: DeepSeek-V4-Flash
-            name: DeepSeek V4 Flash 0731 (AMD)
-            contextWindow: 1048576
-            maxTokens: 393216
-            input:
-              - text
-            reasoningEfforts:
-              off: none
-              low: low
-              high: high
-              max: max
-            compat:
-              supportsDeveloperRole: false
-              supportsReasoningEffort: true
-              chatTemplateKwargs: {}
-              chatTemplateArgs: {}
-          - id: DeepSeek-V4-Flash-Vision-Exp
-            name: DeepSeek V4 Flash Vision Exp (AMD)
-            contextWindow: 1048576
-            maxTokens: 393216
-            input:
-              - text
-              - image
-            reasoningEfforts:
-              off: none
-              low: low
-              high: high
-              max: max
-            compat:
-              supportsDeveloperRole: false
-              supportsReasoningEffort: true
-              chatTemplateKwargs: {}
-              chatTemplateArgs: {}
           - id: DeepSeek-V4.1-Flash
-            name: DeepSeek V4.1 Flash (AMD)
+            name: DeepSeek V4.1 Flash 1017 (AMD)
             contextWindow: 1048576
             maxTokens: 393216
             reasoningEfforts:
@@ -513,7 +484,7 @@
           - id: gyro-gyro-m
             name: gyro-gyro-m
             contextWindow: 272144
-            maxTokens: 65536
+            maxTokens: 16384
             input:
               - text
               - image
@@ -548,7 +519,7 @@
   name: "@deepseek-ai/dsh-agent-preset-registry"
   config:
     default: standard
-    selectedDefault: ptc
+    selectedDefault: standard
 - id: web
   name: "@deepseek-ai/dsh-web"
   config:
