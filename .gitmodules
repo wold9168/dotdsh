@@ -25,3 +25,6 @@
 [submodule "skillrepo/git-commit-helper"]
 	path = skillrepo/git-commit-helper
 	url = https://github.com/wold9168/git-commit-helper
+[submodule "skillrepo/independent-audit.skill"]
+	path = skillrepo/independent-audit.skill
+	url = https://github.com/wold9168/independent-audit.skill
