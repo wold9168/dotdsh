@@ -513,6 +513,7 @@
             initialDelayMs: 500
             maxDelayMs: 5000
             jitterRatio: 0.1
+        streamIdleTimeoutMs: 1200000
       ops-newapi-flagship:
         displayName: 一通的newapi(flagship)
         apiKeyEnv: OPS_NEWAPI_FLAGSHIP_API_KEY
@@ -568,3 +569,149 @@
     provider: auto
     disabledEngines: []
     bingMarket: zh-CN
+    sidebarEntry: true
+    slashCommands: true
+    keylessFirst: false
+    allowedEngines:
+      - ddg
+      - ddg-lite
+      - bing
+      - anysearch
+      - searxng
+      - degoog
+      - exa
+      - tavily
+      - keenable
+      - firecrawl
+      - parallel
+      - brave
+      - zhipu
+      - perplexity
+      - serpbase
+      - serper
+      - serply
+      - outcrawl
+      - google
+      - metaso
+      - yandex
+      - yuanbao
+      - specstream
+      - deepseek-official
+      - deepseek-tools
+      - you
+      - baidu
+      - baidu-html
+      - so360
+      - sogou
+      - wechat
+      - toutiao
+      - kimi
+      - aliyun
+      - doubao
+      - tinyfish
+      - jina
+      - zhihu_global
+      - zhihu_site
+      - agy
+      - openai
+      - gemini
+      - claude
+    fallbackOrder:
+      - exa
+      - tavily
+      - keenable
+      - firecrawl
+      - parallel
+      - brave
+      - zhipu
+      - perplexity
+      - serpbase
+      - serper
+      - serply
+      - outcrawl
+      - google
+      - agy
+      - deepseek-tools
+      - deepseek-official
+      - you
+      - baidu
+      - kimi
+      - aliyun
+      - doubao
+      - tinyfish
+      - jina
+      - bing
+      - anysearch
+      - ddg
+      - ddg-lite
+      - searxng
+      - degoog
+      - zhihu_global
+      - zhihu_site
+    poolPolicy: off
+    zhPool:
+      - bing
+      - baidu
+      - aliyun
+      - anysearch
+    enPool:
+      - bing
+      - exa
+      - tavily
+    fallbackOn:
+      - quota
+      - auth
+      - bot-wall
+      - transient
+      - invalid-response
+      - unknown
+    blockedDomains: []
+    uiLang: ""
+    promptLanguage: en
+    promptStatePages: []
+    promptStateIndex: 0
+    promptToolsLang: ""
+    promptConstraintsPages: []
+    promptConstraintsIndex: 0
+    promptDisplayPages: []
+    promptDisplayIndex: 0
+    disabledTools: []
+    keyStorage: credentials
+    safeSearch: off
+    fetchProviderTakeover: true
+    fetchProviderForce: false
+    googleCseId: ""
+    metasoScope: webpage
+    yandexFolderId: ""
+    yandexSearchType: auto
+    yuanbaoMode: 0
+    yuanbaoSite: ""
+    deepseekToolsBaseUrl: ""
+    tavilyBaseUrl: ""
+    zhipuSearchEngine: search_std
+    snippetMaxChars: 600
+    snippetBudgetChars: 0
+    browserFetch: true
+    browserPath: ""
+    deepseekFetchBaseUrl: ""
+    allowFakeIpCidrs: []
+    fetchPrefer: exa
+    platforms:
+      - github
+      - v2ex
+      - bilibili
+      - reddit
+      - hn
+      - stackoverflow
+      - wikipedia
+      - npm
+      - youtube
+      - vimeo
+      - juejin
+      - douban
+      - qiita
+      - x
+    cacheTtl: 5
+    multiMaxEngines: 0
+    multiMinSources: 1
+    multiMaxResults: 20
