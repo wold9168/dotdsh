@@ -246,3 +246,42 @@
 {"at":"2026-10-24T17:27:53.405Z","level":"info","event":"uninstall-start","detail":"dsh-bili-scroll (profile web)"}
 {"at":"2026-10-24T17:27:54.725Z","level":"info","event":"toggle","detail":"dsh-bili-scroll -> off: fiber=true"}
 {"at":"2026-10-24T17:27:54.726Z","level":"info","event":"uninstall","detail":"dsh-bili-scroll exit=0 live-removed=true"}
+{"at":"2026-11-22T16:14:19.043Z","level":"info","event":"install","detail":"dsh-auto-compaction#dsh-auto-compaction: pinned to the registry's latest, 0.5.0, so pnpm's fresh-release hold cannot substitute an older version silently"}
+{"at":"2026-11-22T16:14:26.695Z","level":"info","event":"install","detail":"dsh-auto-compaction: the host's own replay activated it; adopted instead of mounting a second copy (#814, #827)"}
+{"at":"2026-11-22T16:14:26.725Z","level":"info","event":"install","detail":"dsh-auto-compaction@0.5.0 exit=0 hot=true"}
+{"at":"2026-11-22T16:14:38.209Z","level":"info","event":"update-start","detail":"@tt-a1i/archify-dsh -> @tt-a1i/archify-dsh@1.1.0 (profile web)"}
+{"at":"2026-11-22T16:14:41.778Z","level":"info","event":"update","detail":"@tt-a1i/archify-dsh -> @tt-a1i/archify-dsh@1.1.0 exit=0"}
+{"at":"2026-11-22T16:14:42.171Z","level":"info","event":"update-start","detail":"dsh-context -> dsh-context@0.87.0 (profile web)"}
+{"at":"2026-11-22T16:14:45.802Z","level":"info","event":"update","detail":"dsh-context -> dsh-context@0.87.0 exit=0"}
+{"at":"2026-11-22T16:14:46.102Z","level":"info","event":"update-start","detail":"dsh-free-search -> dsh-free-search@0.9.82 (profile web)"}
+{"at":"2026-11-22T16:14:48.776Z","level":"info","event":"update","detail":"dsh-free-search -> dsh-free-search@0.9.82 exit=0"}
+{"at":"2026-11-22T16:14:49.237Z","level":"info","event":"update-start","detail":"dsh-session-manager -> dsh-session-manager@0.7.11 (profile web)"}
+{"at":"2026-11-22T16:14:52.033Z","level":"info","event":"update","detail":"dsh-session-manager -> dsh-session-manager@0.7.11 exit=0"}
+{"at":"2026-11-22T16:16:17.929Z","level":"info","event":"toggle","detail":"dsh-auto-compaction -> off: fiber=true"}
+{"at":"2026-11-22T16:16:17.945Z","level":"info","event":"patch","detail":"disabled row dsh-auto-compaction in ~/.dsh/profiles/web/cordis.patch.yml"}
+{"at":"2026-11-22T16:16:17.946Z","level":"info","event":"toggle","detail":"dsh-auto-compaction: patch layer disabled rows dsh-auto-compaction"}
+{"at":"2026-11-22T16:16:17.946Z","level":"info","event":"toggle","detail":"dsh-auto-compaction: off ok=true"}
+{"at":"2026-11-22T16:16:30.760Z","level":"info","event":"toggle","detail":"dsh-auto-compaction -> off: fiber=false"}
+{"at":"2026-11-22T16:16:30.760Z","level":"info","event":"boot","detail":"plugin kept off: dsh-auto-compaction"}
+{"at":"2026-11-22T16:16:59.595Z","level":"info","event":"toggle","detail":"@local/anytype-mcp -> off: fiber=true"}
+{"at":"2026-11-22T16:16:59.600Z","level":"info","event":"toggle","detail":"@local/anytype-mcp: dsh.profile.bundles removed so the official page's package switch agrees (#696)"}
+{"at":"2026-11-22T16:16:59.604Z","level":"info","event":"patch","detail":"disabled row anytype-mcp in ~/.dsh/profiles/web/cordis.patch.yml"}
+{"at":"2026-11-22T16:16:59.604Z","level":"info","event":"toggle","detail":"@local/anytype-mcp: patch layer disabled rows anytype-mcp"}
+{"at":"2026-11-22T16:16:59.604Z","level":"info","event":"toggle","detail":"@local/anytype-mcp: off ok=true"}
+{"at":"2026-11-22T16:18:50.508Z","level":"info","event":"uninstall-start","detail":"dsh-auto-compaction (profile web)"}
+{"at":"2026-11-22T16:18:51.197Z","level":"info","event":"toggle","detail":"dsh-auto-compaction -> off: fiber=false"}
+{"at":"2026-11-22T16:18:51.198Z","level":"info","event":"patch","detail":"removed patch rows for dsh-auto-compaction"}
+{"at":"2026-11-22T16:18:51.199Z","level":"info","event":"uninstall","detail":"dsh-auto-compaction exit=0 live-removed=true"}
+{"at":"2026-11-22T16:18:52.489Z","level":"info","event":"toggle","detail":"@local/anytype-mcp: no loader entry matched"}
+{"at":"2026-11-22T16:18:52.490Z","level":"warn","event":"toggle","detail":"@local/anytype-mcp: enable failed; leaving it disabled rather than persisting a state that crashes at boot (#575)"}
+{"at":"2026-11-22T16:18:52.491Z","level":"info","event":"toggle","detail":"@local/anytype-mcp: re-added to dsh.profile.bundles, which nothing was composing (#696)"}
+{"at":"2026-11-22T16:18:52.491Z","level":"error","event":"toggle","detail":"@local/anytype-mcp: on ok=false"}
+{"at":"2026-11-22T16:18:56.111Z","level":"info","event":"toggle","detail":"@local/anytype-mcp -> on: fiber=true"}
+{"at":"2026-11-22T16:18:56.135Z","level":"info","event":"toggle","detail":"@local/anytype-mcp: dsh.profile.bundles re-added so the official page's package switch agrees (#696)"}
+{"at":"2026-11-22T16:18:56.136Z","level":"info","event":"patch","detail":"enabled row anytype-mcp in ~/.dsh/profiles/web/cordis.patch.yml"}
+{"at":"2026-11-22T16:18:56.136Z","level":"info","event":"toggle","detail":"@local/anytype-mcp: patch layer enabled rows anytype-mcp"}
+{"at":"2026-11-22T16:18:56.136Z","level":"info","event":"toggle","detail":"@local/anytype-mcp: on ok=true"}
+{"at":"2026-11-23T07:04:15.311Z","level":"warn","event":"uninstall-blocked","detail":"@local/anytype-mcp: refused while agents are running — session-a2dcab90-29b2-4df3-bee8-73758adb7a89"}
+{"at":"2026-11-23T22:45:44.800Z","level":"info","event":"uninstall-start","detail":"@local/anytype-mcp (profile web)"}
+{"at":"2026-11-23T22:45:46.225Z","level":"info","event":"toggle","detail":"@local/anytype-mcp -> off: fiber=true"}
+{"at":"2026-11-23T22:45:46.227Z","level":"info","event":"uninstall","detail":"@local/anytype-mcp exit=0 live-removed=true"}

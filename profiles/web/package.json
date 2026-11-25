@@ -18,16 +18,18 @@
         "@deepseek-ai/dsh-experimental-session-titles-bundle",
         "@deepseek-ai/dsh-experimental-ralph-bundle",
         "@deepseek-ai/dsh-experimental-plugin-market-bundle",
-        "@deepseek-ai/dsh-experimental-forge-bundle"
+        "@deepseek-ai/dsh-experimental-forge-bundle",
+        "dsh-only-chat"
       ],
       "patchReload": "live"
     }
   },
   "dependencies": {
-    "@tt-a1i/archify-dsh": "^1.0.0",
-    "dsh-context": "^0.75.1",
-    "dsh-free-search": "^0.9.15",
-    "dsh-session-manager": "^0.7.5",
+    "@tt-a1i/archify-dsh": "^1.1.0",
+    "dsh-context": "^0.87.0",
+    "dsh-free-search": "^0.9.82",
+    "dsh-only-chat": "link:/home/wold9168/Documents/_WIP/_llmtmp/dsh-only-chat",
+    "dsh-session-manager": "^0.7.11",
     "dshmarket": "^1.69.0"
   }
 }
