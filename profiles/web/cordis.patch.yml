@@ -12,8 +12,8 @@
 - id: agent-default-model
   name: "@deepseek-ai/dsh-agent-default-model"
   config:
-    provider: nvidia
-    model: z-ai/glm-5.3-flash
+    provider: toughc-strata
+    model: iq2_xs
 - id: llm-pi-ai
   name: "@deepseek-ai/dsh-llm-pi-ai"
   config:
@@ -464,18 +464,6 @@
           - id: gyro-gyro-m
             name: gyro-gyro-m
             contextWindow: 524288
-            maxTokens: 16384
-            input:
-              - text
-              - image
-            reasoningEfforts:
-              off: null
-              low: low
-              medium: medium
-              high: high
-          - id: inkling-2-mini-sq-10
-            name: inkling-2-mini-sq-10
-            contextWindow: 524288
             maxTokens: 65536
             input:
               - text
@@ -485,10 +473,9 @@
               low: low
               medium: medium
               high: high
-          - id: hy4-flash-sq-64
-            name: hy4-flash-sq-64
-            contextWindow: 262144
-            maxTokens: 32000
+          - id: iq2_xs
+            name: iq2_xs
+            contextWindow: 524288
             input:
               - text
               - image
@@ -497,6 +484,7 @@
               low: low
               medium: medium
               high: high
+            maxTokens: 65536
         apiKeyEnv: TOUGHC_STRATA_API_KEY
         retryPolicy:
           mode: normal
@@ -715,3 +703,7 @@
     multiMaxEngines: 0
     multiMinSources: 1
     multiMaxResults: 20
+- id: only-chat
+  name: dsh-only-chat
+  config:
+    maxChats: 50
